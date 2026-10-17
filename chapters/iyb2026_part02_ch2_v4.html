@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>India Year Book 2026 | Ch.2 National Symbols</title>
+<style>
+:root{
+  --bg:#FBF8F0; --card:#FFFFFF;
+  --saffron:#2E8B57; --green:#0F8577; --chakra:#14532D;
+  --ink:#1F2E2B; --sub:#5B6F6A; --gold:#6B8E23;
+  --border:rgba(107,142,35,0.22);
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+body{
+  background:
+    radial-gradient(ellipse 800px 400px at 10% -5%, rgba(46,139,87,0.07), transparent),
+    radial-gradient(ellipse 800px 400px at 90% 10%, rgba(15,133,119,0.06), transparent),
+    var(--bg);
+  color:var(--ink);
+  font-family:'Georgia','Noto Serif',serif;
+  line-height:1.65;
+  padding-bottom:60px;
+}
+#progress-wrap{position:fixed; top:0; left:0; width:100%; height:4px; background:rgba(0,0,0,0.08); z-index:999;}
+#progress-bar{height:100%; width:0%; background:linear-gradient(90deg,var(--saffron),var(--gold),var(--green)); transition:width 0.1s;}
+
+header{text-align:center; padding:48px 20px 32px; position:relative; border-bottom:1px solid var(--border); background:linear-gradient(180deg, rgba(20,83,45,0.06), transparent);}
+.chakra-badge{width:56px; height:56px; margin:0 auto 14px; border-radius:50%; border:2px solid var(--gold); display:flex; align-items:center; justify-content:center;}
+.chakra-badge svg{width:36px; height:36px;}
+.eyebrow{font-family:'Courier New',monospace; letter-spacing:3px; font-size:11px; color:var(--saffron); text-transform:uppercase; margin-bottom:10px;}
+h1{font-size:clamp(26px,5vw,42px); font-weight:700; color:var(--ink); margin-bottom:8px;}
+.subtitle{color:var(--sub); font-size:15px; font-family:'Courier New',monospace;}
+.tricolor-line{height:3px; width:120px; margin:18px auto 0; background:linear-gradient(90deg,var(--saffron),#fff,var(--green)); border-radius:2px;}
+
+nav.toc{max-width:720px; margin:28px auto; padding:20px 22px; background:var(--card); border:1px solid var(--border); border-radius:12px;}
+nav.toc h2{font-size:13px; letter-spacing:2px; color:var(--gold); text-transform:uppercase; margin-bottom:12px; font-family:'Courier New',monospace;}
+nav.toc a{display:flex; align-items:center; gap:8px; color:var(--ink); text-decoration:none; padding:8px 10px; border-radius:6px; font-size:14.5px; border-left:2px solid transparent; transition:0.2s;}
+nav.toc a:hover{background:rgba(46,139,87,0.08); border-left-color:var(--saffron);}
+nav.toc a svg{flex-shrink:0; width:16px; height:16px; stroke:var(--gold);}
+
+main{max-width:760px; margin:0 auto; padding:0 20px;}
+
+.chapter-head{margin-top:40px; padding-bottom:16px; border-bottom:2px solid var(--border); display:flex; align-items:baseline; gap:14px;}
+.chapter-num{font-family:'Courier New',monospace; font-size:14px; color:var(--saffron); border:1px solid var(--saffron); padding:3px 9px; border-radius:20px;}
+.chapter-head h2{font-size:26px; color:var(--ink); font-weight:700;}
+.chapter-pages{margin-left:auto; font-size:12px; color:var(--sub); font-family:'Courier New',monospace;}
+
+.sec{margin-top:34px;}
+.sec-head{background:linear-gradient(90deg, rgba(20,83,45,0.10), rgba(20,83,45,0.02)); padding:10px 16px; border-radius:8px; margin-bottom:14px; border-left:4px solid var(--gold); display:flex; align-items:center; gap:10px;}
+.sec-head .icon{width:22px; height:22px; flex-shrink:0; stroke:var(--gold); fill:none; stroke-width:1.6;}
+.sec-head h3{color:#14532D; font-size:17px; letter-spacing:0.4px; font-weight:700;}
+.sec p{color:#3a3a3a; font-size:15.5px; margin-bottom:12px;}
+.sec b, .sec strong{color:var(--gold); font-weight:700;}
+
+.fact-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; margin:14px 0;}
+.fact{background:var(--card); border:1px solid var(--border); border-radius:10px; padding:12px 14px; display:flex; gap:10px; align-items:flex-start; box-shadow:0 1px 3px rgba(0,0,0,0.04);}
+.fact svg{width:20px; height:20px; stroke:var(--saffron); fill:none; stroke-width:1.7; flex-shrink:0; margin-top:2px;}
+.fact .num{font-size:20px; font-weight:700; color:var(--saffron); font-family:'Courier New',monospace;}
+.fact .lbl{font-size:11.5px; color:var(--sub); margin-top:3px;}
+
+.exam-tip{background:rgba(46,139,87,0.08); border:1px solid rgba(46,139,87,0.3); border-radius:10px; padding:12px 16px; margin:16px 0; font-size:14px; color:#6b4e00; display:flex; gap:10px;}
+.exam-tip svg{width:20px; height:20px; stroke:var(--saffron); fill:none; flex-shrink:0; margin-top:1px;}
+.exam-tip b{color:var(--saffron);}
+
+.glossary-box{background:rgba(20,83,45,0.05); border:1px solid rgba(20,83,45,0.18); border-radius:10px; padding:14px 18px; margin:14px 0;}
+.glossary-box .g-head{display:flex; align-items:center; gap:8px; margin-bottom:10px;}
+.glossary-box .g-head svg{width:18px; height:18px; stroke:#14532D; fill:none; stroke-width:1.6;}
+.glossary-box .g-head span{font-size:11.5px; letter-spacing:1.5px; text-transform:uppercase; color:#14532D; font-family:'Courier New',monospace; font-weight:700;}
+.glossary-box dl{margin:0;}
+.glossary-box dt{font-weight:700; color:var(--saffron); font-size:14px; display:inline; font-family:Georgia,serif;}
+.glossary-box dd{display:inline; margin:0; color:#3a3a3a; font-size:13.5px;}
+.glossary-box .g-item{margin-bottom:7px; line-height:1.55;}
+.glossary-box .g-item:last-child{margin-bottom:0;}
+
+.diagram-card{background:var(--card); border:1px solid var(--border); border-radius:12px; padding:18px; margin:16px 0; text-align:center; box-shadow:0 1px 4px rgba(0,0,0,0.05);}
+.diagram-card svg{max-width:100%; height:auto;}
+
+.anthem-block{background:linear-gradient(135deg,#F2762E 0%,#FF9933 55%,#FFB347 100%); border:2px solid #C9490F; border-radius:14px; padding:18px 22px; margin:14px 0; font-style:italic; color:#fff; font-size:15px; line-height:2; text-shadow:0 1px 2px rgba(120,40,0,.35); box-shadow:0 4px 14px rgba(242,118,46,.28); position:relative; overflow:hidden;}
+.anthem-block::after{content:'';position:absolute;right:-40px;top:-40px;width:140px;height:140px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.45),rgba(255,255,255,0) 70%);pointer-events:none;}
+.anthem-block .label{font-style:normal; color:#fff; background:rgba(0,0,0,.18); display:inline-block; padding:3px 10px; border-radius:999px; font-size:12px; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:10px; font-family:'Courier New',monospace; font-weight:700; text-shadow:none;}
+
+footer{max-width:760px; margin:60px auto 0; padding:24px 20px; text-align:center; border-top:1px solid var(--border); color:var(--sub); font-size:12.5px;}
+footer .pill{display:inline-block; margin-top:10px; padding:5px 14px; border-radius:20px; background:rgba(94,234,212,0.16); border:1px solid rgba(15,133,119,0.4); color:#0F8577; font-family:'Courier New',monospace; font-size:11px;}
+
+.corner-badge{position:fixed; top:12px; right:14px; background:rgba(255,255,255,0.92); border:1px solid var(--border); padding:4px 10px; border-radius:20px; font-size:10.5px; color:var(--sub); font-family:'Courier New',monospace; z-index:998; box-shadow:0 1px 4px rgba(0,0,0,0.06);}
+
+.next-nav{max-width:760px; margin:40px auto 0; padding:0 20px; text-align:center;}
+.next-nav .btn{display:inline-block; padding:10px 22px; border:1px solid var(--gold); border-radius:24px; color:var(--gold); font-family:'Courier New',monospace; font-size:13px; letter-spacing:0.5px;}
+
+/* MCQ / PYQ QUIZ */
+.quiz-head{display:flex; align-items:center; gap:10px; margin-top:56px; padding-bottom:14px; border-bottom:2px solid var(--border);}
+.quiz-head svg{width:26px; height:26px; stroke:var(--gold); fill:none; stroke-width:1.6;}
+.quiz-head h2{font-size:24px; color:var(--ink); font-weight:700;}
+.quiz-controls{display:flex; flex-wrap:wrap; gap:10px; margin:16px 0 20px; align-items:center;}
+.quiz-toggle{padding:7px 14px; border-radius:20px; border:1px solid var(--border); background:var(--card); color:var(--sub); font-size:12.5px; font-family:'Courier New',monospace; cursor:pointer; box-shadow:0 1px 3px rgba(0,0,0,0.04);}
+.quiz-toggle.active{border-color:var(--saffron); color:var(--saffron); background:rgba(46,139,87,0.1);}
+.score-panel{margin-left:auto; display:flex; gap:14px; align-items:center; font-family:'Courier New',monospace; font-size:13px; color:var(--sub);}
+.score-panel b{color:var(--gold); font-size:16px;}
+.q-progress-wrap{height:6px; background:rgba(0,0,0,0.08); border-radius:4px; overflow:hidden; margin-bottom:22px;}
+.q-progress-bar{height:100%; width:0%; background:linear-gradient(90deg,var(--saffron),var(--gold),var(--green)); transition:width 0.3s;}
+
+.q-card{background:var(--card); border:1px solid var(--border); border-radius:12px; padding:18px 20px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,0.05);}
+.q-card.hidden-filter{display:none;}
+.q-meta{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:10px;}
+.badge{font-size:10.5px; font-family:'Courier New',monospace; padding:3px 9px; border-radius:12px; letter-spacing:0.4px;}
+.badge.pyq{background:rgba(20,83,45,0.10); color:#14532D; border:1px solid rgba(20,83,45,0.35);}
+.badge.medium{background:rgba(107,142,35,0.10); color:var(--gold); border:1px solid rgba(107,142,35,0.35);}
+.badge.hard{background:rgba(193,39,45,0.08); color:#C1272D; border:1px solid rgba(193,39,45,0.35);}
+.badge.easy{background:rgba(46,139,87,0.10); color:#1F7A4D; border:1px solid rgba(46,139,87,0.35);}
+.q-text{font-size:15.5px; color:var(--ink); margin-bottom:12px; font-family:Georgia,serif;}
+.q-opts{display:flex; flex-direction:column; gap:8px;}
+.q-opt{
+  text-align:left; padding:10px 14px; border-radius:8px; border:1px solid var(--border);
+  background:#FBF9F3; color:#3a3a3a; font-size:14.5px; cursor:pointer; font-family:Georgia,serif;
+  transition:0.15s;
+}
+.q-opt:hover:not(.locked){border-color:var(--saffron); background:rgba(46,139,87,0.06);}
+.q-opt.correct{background:rgba(46,139,87,0.14); border-color:#2E8B57; color:#1F7A4D;}
+.q-opt.incorrect{background:rgba(193,39,45,0.10); border-color:#C1272D; color:#C1272D;}
+.q-opt.locked{cursor:default;}
+.q-explain{margin-top:10px; font-size:13px; color:var(--sub); padding-top:10px; border-top:1px dashed var(--border); display:none;}
+.q-explain.show{display:block;}
+
+.quiz-footer-bar{display:flex; gap:10px; margin-top:16px; flex-wrap:wrap;}
+.quiz-btn{padding:9px 18px; border-radius:20px; border:1px solid var(--gold); background:transparent; color:var(--gold); font-family:'Courier New',monospace; font-size:12.5px; cursor:pointer;}
+.quiz-btn:hover{background:rgba(107,142,35,0.08);}
+.result-panel{display:none; text-align:center; background:var(--card); border:1px solid var(--gold); border-radius:14px; padding:26px 20px; margin-top:18px;}
+.result-panel.show{display:block;}
+.result-panel .big-score{font-size:38px; color:var(--gold); font-family:'Courier New',monospace; font-weight:700;}
+.result-panel .acc{color:var(--sub); font-size:13.5px; margin-top:6px;}
+
+@media(max-width:600px){.chapter-head{flex-wrap:wrap;} .chapter-pages{margin-left:0;} .score-panel{margin-left:0; width:100%; justify-content:space-between;}}
+/* ===== IYB-KIT: animated figures (sea green + sunset orange) ===== */
+.iyb-fig{background:#EEF8F2;border:1px solid var(--border);border-radius:14px;padding:12px;margin:12px 0 16px;}
+.iyb-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px;color:#1F6B45;}
+.iyb-badge{font-family:'Courier New',monospace;font-size:12px;font-weight:700;background:#F2762E;color:#fff;padding:4px 10px;border-radius:999px;}
+.iyb-track{display:flex;gap:6px;margin-bottom:6px;}
+.iyb-track i{flex:1;height:6px;border-radius:3px;background:#CFE9DA;cursor:pointer;transition:background .3s;}
+.iyb-track i.done{background:#2E8B57;}.iyb-track i.cur{background:#F2762E;}
+.iyb-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.iyb-svg{display:block;width:100%;max-width:700px;height:auto;margin:6px auto 0;background:#fff;border-radius:12px;border:1px solid var(--border);}
+.iyb-svg text{font-family:'Courier New',monospace;}
+.iyb-note{margin-top:10px;padding:9px 12px;background:#fff;border-left:4px solid #F2762E;border-radius:8px;font-size:13.5px;color:var(--ink);min-height:20px;}
+.iyb-bar{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:10px;}
+.iyb-btn{font-family:'Courier New',monospace;font-size:12px;font-weight:700;padding:6px 12px;border-radius:999px;border:1.5px solid #2E8B57;background:#fff;color:#1F6B45;cursor:pointer;}
+.iyb-btn.on{background:#2E8B57;color:#fff;}
+.iyb-btn.alt{border-style:dashed;}
+.iyb-btn[disabled]{opacity:.4;cursor:default;}
+.iyb-svg .iyb-bar-r{transition:width 1.1s cubic-bezier(.2,.8,.2,1);}
+@keyframes iyb-pop{0%{transform:scale(0);opacity:0}70%{transform:scale(1.15)}100%{transform:scale(1);opacity:1}}
+@keyframes iyb-fade{from{opacity:0}to{opacity:1}}
+@keyframes iyb-rise{from{transform:translateY(14px);opacity:0}to{transform:translateY(0);opacity:1}}
+@keyframes iyb-spin{to{transform:rotate(360deg)}}
+@keyframes iyb-wave{0%,100%{transform:skewY(0)}50%{transform:skewY(2.5deg)}}
+@keyframes iyb-pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.25);opacity:.55}}
+@keyframes iyb-dash{to{stroke-dashoffset:0}}
+.iyb-pop{transform-box:fill-box;transform-origin:center;animation:iyb-pop .6s ease-out both;}
+.iyb-fade{animation:iyb-fade .8s ease-out both;}
+.iyb-rise{animation:iyb-rise .7s ease-out both;}
+.iyb-spin{transform-box:fill-box;transform-origin:center;animation:iyb-spin 20s linear infinite;}
+.iyb-wave{transform-box:fill-box;transform-origin:left center;animation:iyb-wave 3s ease-in-out infinite;}
+.iyb-pulse{transform-box:fill-box;transform-origin:center;animation:iyb-pulse 2s ease-in-out infinite;}
+@media (prefers-reduced-motion: reduce){.iyb-svg *{animation:none !important;transition:none !important;}}
+
+.iyb-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-top:10px;}
+.iyb-card{background:#fff;border:2px solid #2E8B57;border-radius:12px;overflow:hidden;animation:iyb-rise .6s ease-out both;}
+.iyb-card:nth-child(even){border-color:#F2762E;}
+.iyb-card h5{margin:0;padding:6px 10px;font-family:'Courier New',monospace;font-size:13.5px;color:#fff;background:#2E8B57;}
+.iyb-card:nth-child(even) h5{background:#F2762E;}
+.iyb-card p{margin:0;padding:8px 10px;font-size:14.5px;line-height:1.45;color:#1F2E2B;}
+.iyb-card:nth-child(2){animation-delay:.15s}.iyb-card:nth-child(3){animation-delay:.3s}.iyb-card:nth-child(4){animation-delay:.45s}
+
+.iyb-title{color:#14532D;}
+</style>
+</head>
+<body>
+<div id="progress-wrap"><div id="progress-bar"></div></div>
+<div class="corner-badge" id="cornerPct">0%</div>
+
+<header>
+  <div class="chakra-badge"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="none" stroke="#6B8E23" stroke-width="2.5"/><circle cx="50" cy="50" r="4" fill="#6B8E23"/><g id="spokes"></g></svg></div>
+  <div class="eyebrow">Bharat 2026 · A Reference Annual · Publications Division, GoI</div>
+  <h1>India Year Book 2026</h1>
+  <div class="subtitle">PART 2 of 25 &nbsp;·&nbsp; Chapter 2 &nbsp;·&nbsp; Pages 28&ndash;31</div>
+  <div class="tricolor-line"></div>
+</header>
+
+<nav class="toc">
+  <h2>On This Page</h2>
+  <a href="#tl"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Timeline</a>
+  <a href="#flag"><svg viewBox="0 0 24 24"><path d="M5 21V4M5 4h14l-3 4 3 4H5"/></svg>National Flag</a>
+  <a href="#emblem"><svg viewBox="0 0 24 24"><circle cx="8" cy="10" r="4"/><circle cx="16" cy="10" r="4"/><rect x="4" y="17" width="16" height="3" rx="1"/></svg>State Emblem</a>
+  <a href="#anthem"><svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>National Anthem</a>
+  <a href="#song"><svg viewBox="0 0 24 24"><path d="M4 20l8-16 8 16"/><path d="M8 12h8"/></svg>National Song</a>
+  <a href="#cal"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>National Calendar</a>
+  <a href="#animal"><svg viewBox="0 0 24 24"><path d="M4 14c0-4 3-8 8-8s8 4 8 8-3 6-8 6-8-2-8-6z"/></svg>National Animal & Bird</a>
+  <a href="#abbrev"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>Abbreviations Used</a>
+  <a href="#quizList"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>Practice MCQs</a>
+</nav>
+
+<main>
+
+<div class="chapter-head">
+  <span class="chapter-num">02</span>
+  <h2>National Symbols</h2>
+  <span class="chapter-pages">pp. 28&ndash;31</span>
+</div>
+
+<section class="sec" id="tl">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><h3>Timeline of National Symbols</h3></div>
+  <div id="fig-tl"></div>
+</section>
+
+<section class="sec" id="flag">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V4M5 4h14l-3 4 3 4H5"/></svg><h3>National Flag</h3></div>
+  <div id="fig-flag"></div>
+  <p>Tricolour: saffron (top), white (middle, with navy-blue <b>24-spoke Ashoka Chakra</b>), green (bottom). Must be made of <b>hand-spun/handwoven Khadi cotton/silk</b> per the Flag Code; MHA directs states/UTs against plastic flags (not biodegradable). Paper flags permitted at events under the <b>Flag Code of India, 2002</b> but must be disposed of privately/with dignity, not discarded on the ground.</p>
+  <div class="glossary-box">
+    <div class="g-head"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg><span>Word Bank</span></div>
+    <div class="g-item"><dt>Khadi</dt><dd> — hand-spun, hand-woven cloth (usually cotton, silk or wool) made popular during India's freedom struggle as a symbol of self-reliance; the National Flag must legally be made of it.</dd></div>
+    <div class="g-item"><dt>Flag Code</dt><dd> — the official set of rules in India governing how the National Flag may be displayed, used, and disposed of with dignity.</dd></div>
+    <div class="g-item"><dt>Biodegradable</dt><dd> — material that naturally breaks down and decomposes over time (like cloth/paper); plastic is NOT biodegradable, which is why plastic flags are discouraged.</dd></div>
+  </div>
+</section>
+
+<section class="sec" id="emblem">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><circle cx="8" cy="10" r="4"/><circle cx="16" cy="10" r="4"/><rect x="4" y="17" width="16" height="3" rx="1"/></svg><h3>State Emblem</h3></div>
+  <div id="fig-emblem"></div>
+  <p>Adaptation of the <b>Lion Capital of Ashoka at Sarnath</b>. Original: 4 lions back-to-back on a circular abacus with elephant, galloping horse, bull, lion (separated by Dharma Chakras) on the frieze, resting on a bell-shaped lotus.</p>
+  <p>State Emblem (adopted <b>26 January 1950</b>): shows only <b>3 lions</b> visible, Dharma Chakra in centre, bull (right), galloping horse (left), outline Chakras at extreme ends; <b>bell-shaped lotus omitted</b>. Motto: <b>"Satyameva Jayate"</b> (Truth alone Triumphs, Devanagari, from the Mundaka Upanishad) inscribed below.</p>
+  <p>Regulated by the <b>State Emblem of India (Prohibition of Improper Use) Act, 2005</b> and the <b>State Emblem of India (Regulation of Use) Rules, 2007</b> (amended 2010).</p>
+  <div class="glossary-box">
+    <div class="g-head"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg><span>Word Bank</span></div>
+    <div class="g-item"><dt>Abacus</dt><dd> — here, the flat circular platform/slab at the top of the pillar on which the four lions stand (an architectural term, not the counting tool).</dd></div>
+    <div class="g-item"><dt>Frieze</dt><dd> — a decorated horizontal band, usually carved with figures or patterns, running around a structure — here it's the carved band around the abacus showing the elephant, horse, bull and lion.</dd></div>
+    <div class="g-item"><dt>Dharma Chakra</dt><dd> — the "Wheel of Law/Righteousness," a Buddhist symbol representing the teachings of the Buddha; it also appears at the centre of the Indian National Flag.</dd></div>
+    <div class="g-item"><dt>Motto</dt><dd> — a short phrase expressing a guiding principle; India's national motto is "Satyameva Jayate" (Truth alone Triumphs).</dd></div>
+  </div>
+</section>
+
+<section class="sec" id="anthem">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg><h3>National Anthem</h3></div>
+  <div id="fig-anthem"></div>
+  <p><b>Jana-gana-mana</b>, composed in Bangla by <b>Rabindranath Tagore</b>; Hindi version adopted by the Constituent Assembly on <b>24 January 1950</b>. First sung <b>27 December 1911</b> at the Calcutta session of the INC. Full song = 5 stanzas; first stanza is the official anthem. <b>Playing time: ~52 seconds</b> (full); short version = first & last lines, ~20 seconds.</p>
+  <div class="anthem-block">
+    <div class="label">First Stanza (official National Anthem)</div>
+    Jana-gana-mana-adhinayaka, jaya he<br>
+    Bharata-bhagya-vidhata<br>
+    Panjaba-Sindhu-Gujarata-Maratha<br>
+    Dravida-Utkala-Banga<br>
+    Vindhya-Himachala-Yamuna-Ganga<br>
+    uchchala-jaladhi-taranga<br>
+    Tava subha name jage, Tave subha asisa mage,<br>
+    Gahe tava jaya-gatha.<br>
+    Jana-gana-mangala-dayaka jaya he<br>
+    Bharata-bhagya-vidhata.<br>
+    Jaya he, jaya he, jaya he, Jaya jaya jaya, jaya he!
+  </div>
+  <div class="glossary-box">
+    <div class="g-head"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg><span>Word Bank</span></div>
+    <div class="g-item"><dt>Stanza</dt><dd> — a group of lines forming a single unit/verse within a song or poem; the full anthem has 5 stanzas, but only the first is officially sung as the National Anthem.</dd></div>
+    <div class="g-item"><dt>Constituent Assembly</dt><dd> — the body that drafted and adopted India's Constitution (1946–1950); it also formally adopted the National Anthem.</dd></div>
+  </div>
+</section>
+
+<section class="sec" id="song">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><path d="M4 20l8-16 8 16"/><path d="M8 12h8"/></svg><h3>National Song</h3></div>
+  <div id="fig-song"></div>
+  <p><b>Vande Mataram</b>, composed in Sanskrit by <b>Bankimchandra Chatterji</b>; first published <b>1875</b>; first sung on a political platform at the <b>1896 INC session</b>. Composition date corroborated by Sri Aurobindo's writing (16 April 1907, in the daily <i>Bande Mataram</i>). <b>7 November 2025 marked its 150th anniversary.</b> Status equal to the National Anthem. English rendering by Sri Aurobindo.</p>
+  <div class="glossary-box">
+    <div class="g-head"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg><span>Word Bank</span></div>
+    <div class="g-item"><dt>Corroborated</dt><dd> — confirmed or supported by additional independent evidence (here, Aurobindo's 1907 writing supports the song's 1875 composition date).</dd></div>
+    <div class="g-item"><dt>Rendering</dt><dd> — a translated or adapted version of a work in another language (Sri Aurobindo's English rendering = his English translation of the Sanskrit original).</dd></div>
+  </div>
+</section>
+
+<section class="sec" id="cal">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><h3>National Calendar</h3></div>
+  <div id="fig-cal"></div>
+  <p>Based on the <b>Saka Era</b>, first month <b>Chaitra</b>, normal year 365 days; adopted <b>22 March 1957</b> alongside the Gregorian calendar for: (i) Gazette of India, (ii) All India Radio news broadcasts, (iii) Government of India calendars, (iv) Government communications to the public. <b>1 Chaitra = 22 March</b> normally, <b>21 March</b> in a leap year.</p>
+  <div class="glossary-box">
+    <div class="g-head"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg><span>Word Bank</span></div>
+    <div class="g-item"><dt>Saka Era</dt><dd> — a traditional Indian calendar system starting in 78 CE, used as the basis of India's official National Calendar alongside the Gregorian (international) calendar.</dd></div>
+    <div class="g-item"><dt>Gregorian calendar</dt><dd> — the standard 12-month, 365/366-day calendar used internationally today (the one on your phone).</dd></div>
+    <div class="g-item"><dt>Leap year</dt><dd> — a year with one extra day (366 instead of 365) added to keep the calendar aligned with Earth's orbit; occurs roughly every 4 years.</dd></div>
+  </div>
+</section>
+
+<section class="sec" id="animal">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><path d="M4 14c0-4 3-8 8-8s8 4 8 8-3 6-8 6-8-2-8-6z"/><circle cx="9" cy="12" r="1"/><circle cx="15" cy="12" r="1"/></svg><h3>National Animal & Bird</h3></div>
+  <div id="fig-animal"></div>
+  <div class="fact-grid">
+    <div class="fact"><svg viewBox="0 0 24 24"><path d="M4 14c0-4 3-8 8-8s8 4 8 8-3 6-8 6-8-2-8-6z"/></svg><div><div class="num">Tiger</div><div class="lbl">National Animal</div></div></div>
+    <div class="fact"><svg viewBox="0 0 24 24"><path d="M4 20c4-10 12-16 16-16-2 6-4 10-8 12"/></svg><div><div class="num">Peacock</div><div class="lbl">National Bird</div></div></div>
+  </div>
+  <p>Both <b>re-notified</b> by the Wildlife Division, then-Ministry of Environment & Forests, notification dated <b>30 May 2011</b>.</p>
+  <div class="exam-tip"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg><span><b>Note the wording:</b> the book uses "re-notified" &mdash; a recurring exact-word trap in objective questions.</span></div>
+  <div class="glossary-box">
+    <div class="g-head"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg><span>Word Bank</span></div>
+    <div class="g-item"><dt>Notified / Re-notified</dt><dd> — "notified" means officially declared through a government gazette/order; "re-notified" means the same declaration was issued again (renewed/reconfirmed), not that the status changed.</dd></div>
+    <div class="g-item"><dt>Wildlife Division</dt><dd> — the branch of the (then) Ministry of Environment and Forests responsible for wildlife protection policy and notifications like this one.</dd></div>
+  </div>
+</section>
+
+
+<section class="sec" id="abbrev">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg><h3>Abbreviations Used in This Chapter</h3></div>
+  <table>
+    <tr><th>Abbreviation</th><th>Full Form</th></tr>
+    <tr><td><b>ISRO</b></td><td>Indian Space Research Organisation</td></tr>
+  </table>
+</section>
+
+<script>
+/* IYB-KIT */
+(function(){
+  if(window.IYB) return;
+  var NS='http://www.w3.org/2000/svg';
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var C={G:'#2E8B57',GD:'#1F6B45',GL:'#6FCF9A',O:'#F2762E',OD:'#C9490F',OL:'#F9A56A',INK:'#1F2E2B',SUB:'#5B6F6A',BG:'#EEF6F1'};
+  function mk(svg,after){
+    var c={svg:svg,reduce:reduce,C:C};
+    for(var k in C)c[k]=C[k];
+    var dp=svg;c.use=function(g){dp=g||svg;};c.el=function(n,a,txt,parent){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;(parent||dp).appendChild(e);return e;};
+    c.g=function(a,parent){return c.el('g',a||{},null,parent);};
+    c.text=function(x,y,t,o,parent){o=o||{};var a={x:x,y:y,'font-size':Math.max(o.s||12,12.5),fill:o.f||C.INK};if(o.w)a['font-weight']=o.w;if(o.a)a['text-anchor']=o.a;if(o.op!=null)a.opacity=o.op;return c.el('text',a,t,parent);};
+    c.after=function(f,delay){after.push(function(){if(delay&&!reduce)setTimeout(f,delay);else f();});};
+    c.title=function(t,x,y){return c.text(x,y,t,{s:12,w:700,f:C.GD});};
+    c.bars=function(rows,x0,y0,w,rowH,max,fmt,gap){
+      rows.forEach(function(r,i){var y=y0+i*(rowH+(gap==null?8:gap));
+        c.text(x0-8,y+rowH*0.68,r.l,{s:11.5,a:'end'});
+        c.el('rect',{x:x0,y:y,width:w,height:rowH,rx:4,fill:C.BG});
+        var b=c.el('rect',{x:x0,y:y,width:reduce?w*r.v/max:0,height:rowH,rx:4,fill:r.c||C.G,'class':'iyb-bar-r'});
+        var warm=(r.c===C.O||r.c===C.OD||r.c===C.OL);
+        var t=c.text(x0+w*r.v/max+6,y+rowH*0.68,fmt?fmt(r.v):r.v,{s:11.5,w:700,f:warm?C.OD:C.GD,op:reduce?1:0});
+        c.after(function(){b.setAttribute('width',w*r.v/max);t.setAttribute('opacity',1);});
+      });
+    };
+    return c;
+  }
+  window.IYB={C:C,reduce:reduce,
+   mount:function(id,cfg){
+    var root=document.getElementById(id); if(!root) return;
+    var steps=cfg.steps,H=cfg.h||300,W=cfg.w||700,multi=steps.length>1,cur=0,timer=null,after=[];
+    root.className='iyb-fig';
+    root.innerHTML='<div class="iyb-head"><span class="iyb-badge"></span><b class="iyb-title"></b></div>'+(multi?'<div class="iyb-track"></div>':'')+
+      '<div class="iyb-scroll"><svg class="iyb-svg" style="min-width:'+(cfg.minw!=null?cfg.minw:(W>600?620:0))+'px" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+(cfg.label||'Animated diagram')+'"></svg></div><div class="iyb-html"></div><div class="iyb-note"></div>'+
+      '<div class="iyb-bar">'+(multi?'<button class="iyb-btn iyb-prev">← Previous</button><button class="iyb-btn on iyb-next">Next step →</button><button class="iyb-btn alt iyb-play">▶ Auto-play</button>':'<button class="iyb-btn alt iyb-play">↺ Replay</button>')+'</div>';
+    var svg=root.querySelector('svg'),badge=root.querySelector('.iyb-badge'),ttl=root.querySelector('.iyb-title'),note=root.querySelector('.iyb-note'),htm=root.querySelector('.iyb-html'),track=root.querySelector('.iyb-track');
+    var prev=root.querySelector('.iyb-prev'),next=root.querySelector('.iyb-next'),play=root.querySelector('.iyb-play');
+    if(!multi)badge.style.display='none';
+    if(multi)steps.forEach(function(s,i){var d=document.createElement('i');d.title=s.t;d.addEventListener('click',function(){stop();show(i);});track.appendChild(d);});
+    function show(i){
+      cur=i;after=[];svg.innerHTML='';svg.setAttribute('viewBox','0 0 '+W+' '+(steps[i].h||H));var c=mk(svg,after);steps[i].draw(c);htm.innerHTML=steps[i].html?steps[i].html():'';svg.parentNode.style.display=(steps[i].h&&steps[i].h<40)?'none':'';
+      badge.textContent='Step '+(i+1)+' of '+steps.length;ttl.textContent=steps[i].t;note.textContent=steps[i].note||'';
+      if(multi){Array.prototype.forEach.call(track.children,function(d,k){d.className=k<i?'done':(k===i?'cur':'');});prev.style.opacity=i?1:.4;next.textContent=i===steps.length-1?'Restart ↺':'Next step →';}
+      svg.getBoundingClientRect();
+      requestAnimationFrame(function(){requestAnimationFrame(function(){after.forEach(function(f){f();});});});
+    }
+    function stop(){if(timer){clearInterval(timer);timer=null;}if(multi)play.textContent='▶ Auto-play';}
+    if(multi){prev.addEventListener('click',function(){stop();show(Math.max(0,cur-1));});
+      next.addEventListener('click',function(){stop();show((cur+1)%steps.length);});
+      play.addEventListener('click',function(){if(timer){stop();return;}play.textContent='❚❚ Pause';timer=setInterval(function(){show((cur+1)%steps.length);},cfg.every||5000);});}
+    else play.addEventListener('click',function(){show(0);});
+    show(0);
+   }};
+})();
+
+</script>
+<script>
+(function(){
+
+function cards(a){return function(){return '<div class="iyb-cards">'+a.map(function(x){return '<div class="iyb-card"><h5>'+x[0]+'</h5><p>'+x[1]+'</p></div>';}).join('')+'</div>';};}
+var SAF='#FF9933',GRN='#138808',NAVY='#000080';
+function wrap(c,x,y,t,o,maxc,lh){o=o||{};var words=t.split(' '),ln='',lines=[];words.forEach(function(w){if((ln+' '+w).trim().length>maxc){lines.push(ln.trim());ln=w;}else ln+=' '+w;});lines.push(ln.trim());lines.forEach(function(l,i){c.text(x,y+i*(lh||13),l,o);});return lines.length;}
+function chakra(c,cx,cy,r,col,parent,delay){
+  c.el('circle',{cx:cx,cy:cy,r:r,fill:'none',stroke:col,'stroke-width':r/9},null,parent);
+  c.el('circle',{cx:cx,cy:cy,r:r*0.12,fill:col},null,parent);
+  for(var i=0;i<24;i++){(function(i){var a=i*Math.PI/12;
+    var ln=c.el('line',{x1:cx+Math.cos(a)*r*0.14,y1:cy+Math.sin(a)*r*0.14,x2:cx+Math.cos(a)*r*0.9,y2:cy+Math.sin(a)*r*0.9,stroke:col,'stroke-width':r/22,opacity:IYB.reduce?1:0},null,parent);
+    c.after(function(){ln.setAttribute('opacity',1);},(delay||0)+i*70);})(i);}
+}
+function lion(c,x,y,s,parent){
+  var g=c.g({},parent),pts=[];for(var i=0;i<24;i++){var r=(i%2?0.85:1.05)*s,a=i*Math.PI/12;pts.push((x+Math.cos(a)*r).toFixed(1)+','+(y+Math.sin(a)*r).toFixed(1));}
+  c.el('polygon',{points:pts.join(' '),fill:c.OL,stroke:c.OD,'stroke-width':1.2},null,g);
+  c.el('circle',{cx:x,cy:y,r:s*0.62,fill:'#FFF1E0',stroke:c.OD,'stroke-width':1.2},null,g);
+  c.el('circle',{cx:x-s*0.22,cy:y-s*0.12,r:s*0.07,fill:c.GD},null,g);c.el('circle',{cx:x+s*0.22,cy:y-s*0.12,r:s*0.07,fill:c.GD},null,g);
+  c.el('path',{d:'M'+(x-s*0.1)+' '+(y+s*0.05)+' L'+(x+s*0.1)+' '+(y+s*0.05)+' L'+x+' '+(y+s*0.2)+'Z',fill:c.OD},null,g);
+  c.el('path',{d:'M'+x+' '+(y+s*0.2)+' q'+(-s*0.16)+' '+(s*0.14)+' '+(-s*0.28)+' '+(s*0.05)+' M'+x+' '+(y+s*0.2)+' q'+(s*0.16)+' '+(s*0.14)+' '+(s*0.28)+' '+(s*0.05),fill:'none',stroke:c.OD,'stroke-width':1.3,'stroke-linecap':'round'},null,g);
+  return g;
+}
+function flag(c,x,y,w,h,withChakra,delay0){
+  var g=c.g({'class':'iyb-wave'});
+  [[SAF,0],[ '#FFFFFF',1],[GRN,2]].forEach(function(b){var r=c.el('rect',{x:x,y:y+h/3*b[1],width:w,height:h/3+0.5,fill:b[0],stroke:b[0]==='#FFFFFF'?'#C9D6CC':b[0],'stroke-width':b[0]==='#FFFFFF'?1:0,'class':'iyb-rise'},null,g);r.style.animationDelay=(delay0||0)+b[1]*0.25+'s';});
+  c.el('rect',{x:x-8,y:y-12,width:8,height:h+44,rx:3,fill:'#8A6D4B'});
+  c.el('circle',{cx:x-4,cy:y-16,r:6,fill:c.O});
+  if(withChakra)chakra(c,x+w/2,y+h/2,h/6.3,NAVY,g,withChakra===true?0:withChakra);
+  return g;
+}
+/* ---------- timeline ---------- */
+IYB.mount('fig-tl',{label:'Timeline of national symbols',w:420,minw:0,h:500,steps:[{t:'National symbols at a glance (1875 → 2025)',note:'Events are in time order. Dates are the ones given in the chapter.',draw:function(c){
+  var ev=[['1875','Vande Mataram first published'],['1896','Vande Mataram sung on a political platform (INC session)'],['1907','Aurobindo’s writing (16 Apr) backs the 1875 date'],['27 Dec 1911','Jana-gana-mana first sung, Calcutta INC'],['24 Jan 1950','Anthem adopted (Constituent Assembly)'],['26 Jan 1950','State Emblem adopted'],['22 Mar 1957','National Calendar adopted'],['30 May 2011','Tiger & Peacock re-notified'],['7 Nov 2025','Vande Mataram — 150th anniversary']];
+  var x=124,y0=34,dy=54;
+  var ln=c.el('line',{x1:x,x2:x,y1:y0,y2:y0+dy*(ev.length-1),stroke:c.G,'stroke-width':4,'stroke-linecap':'round'});
+  var L=dy*(ev.length-1);ln.style.strokeDasharray=L;ln.style.strokeDashoffset=IYB.reduce?0:L;ln.style.transition='stroke-dashoffset 2.4s ease-out';c.after(function(){ln.style.strokeDashoffset=0;});
+  ev.forEach(function(e,i){var y=y0+i*dy,hot=(i===4||i===5),col=hot?c.O:(i===8?c.O:c.G);var g=c.g({opacity:0});
+    c.el('circle',{cx:x,cy:y,r:10,fill:col,stroke:'#fff','stroke-width':3},null,g);
+    c.text(x-18,y+5,e[0],{s:13.5,w:700,a:'end',f:col===c.O?c.OD:c.GD},g);
+    var words=e[1].split(' '),l2='',lines=[];words.forEach(function(w){if((l2+' '+w).trim().length>29){lines.push(l2.trim());l2=w;}else l2+=' '+w;});lines.push(l2.trim());
+    lines.forEach(function(t,k){c.text(x+20,y+(lines.length>1?-3:5)+k*16,t,{s:13.5,f:c.INK},g);});
+    c.after(function(){g.setAttribute('opacity',1);g.setAttribute('class','iyb-rise');},i*260);});
+}}]});
+/* ---------- flag ---------- */
+IYB.mount('fig-flag',{label:'National Flag step by step',w:420,minw:0,h:230,steps:[
+ {t:'The Tricolour',note:'Saffron (top), white (middle) and green (bottom) bands.',draw:function(c){
+   flag(c,90,26,240,150,false,0);
+   c.text(210,62,'SAFFRON',{s:14,w:700,a:'middle',f:'#7a3a00'});c.text(210,118,'WHITE',{s:14,w:700,a:'middle',f:c.SUB});c.text(210,162,'GREEN',{s:14,w:700,a:'middle',f:'#fff'});
+ }},
+ {t:'The Ashoka Chakra',note:'The white band carries a navy-blue Ashoka Chakra with 24 spokes (the Dharma Chakra, the Wheel of Law).',draw:function(c){
+   flag(c,90,26,240,150,300,0);
+   var n=c.text(210,212,'0',{s:26,w:700,f:NAVY,a:'end'});c.text(218,212,'spokes',{s:14,w:700,f:c.SUB});
+   c.after(function(){var k=0;var t=setInterval(function(){k++;n.textContent=k;if(k>=24)clearInterval(t);},70);},300);
+ }},
+ {t:'Made of Khadi',h:210,html:cards([['Khadi (required)','Hand-spun, hand-woven cotton / silk, as per the Flag Code'],['Plastic flags','MHA directs states/UTs against them: not biodegradable'],['Paper flags','Allowed at events; dispose privately and with dignity']]),note:'The National Flag must legally be made of Khadi.',draw:function(c){
+   var d=c.el('defs',{});var p=c.el('pattern',{id:'wvv',width:6,height:6,patternUnits:'userSpaceOnUse'},null,d);
+   c.el('path',{d:'M0 0L6 6M6 0L0 6',stroke:'#000',opacity:.18,'stroke-width':.8},null,p);
+   var g=flag(c,90,26,240,150,true,0);c.el('rect',{x:90,y:26,width:240,height:150,fill:'url(#wvv)'},null,g);
+   c.text(210,198,'Khadi weave',{s:13,a:'middle',f:c.SUB});
+ }}]});
+/* ---------- emblem ---------- */
+IYB.mount('fig-emblem',{label:'State Emblem step by step',w:420,minw:0,h:300,steps:[
+ {t:'Original: Lion Capital of Ashoka, Sarnath',h:290,html:cards([['Centre','4 lions, back-to-back, on a circular abacus'],['Frieze ring','E = Elephant, H = galloping Horse, B = Bull, L = Lion, separated by 4 Dharma Chakras'],['Base','Bell-shaped lotus']]),note:'Top view of the original. The frieze ring turns slowly.',draw:function(c){
+   var cx=210,cy=145;
+   var ring=c.g({'class':'iyb-spin'});
+   c.el('circle',{cx:cx,cy:cy,r:128,fill:'#FFF6EC',stroke:c.O,'stroke-width':3},null,ring);
+   c.el('circle',{cx:cx,cy:cy,r:86,fill:'#fff',stroke:c.O,'stroke-width':2},null,ring);
+   [['E'],['C'],['H'],['C'],['B'],['C'],['L'],['C']].forEach(function(f,i){var a=i*Math.PI/4-Math.PI/2,x=cx+Math.cos(a)*107,y=cy+Math.sin(a)*107;
+     if(f[0]==='C'){c.el('circle',{cx:x,cy:y,r:11,fill:'none',stroke:'#000080','stroke-width':1.6},null,ring);for(var k=0;k<8;k++){var b=k*Math.PI/4;c.el('line',{x1:x,y1:y,x2:x+Math.cos(b)*11,y2:y+Math.sin(b)*11,stroke:'#000080','stroke-width':1},null,ring);}}
+     else{c.el('circle',{cx:x,cy:y,r:13,fill:c.G},null,ring);var t=c.text(x,y+4.5,f[0],{s:13,w:700,a:'middle',f:'#fff'},ring);}});
+   [[0,-1],[1,0],[0,1],[-1,0]].forEach(function(d){lion(c,cx+d[0]*46,cy+d[1]*46,22);});
+ }},
+ {t:'Adopted: State Emblem (26 January 1950)',h:330,html:cards([['3 lions visible','Dharma Chakra in the centre'],['Bull & horse','Bull on the right, galloping horse on the left'],['Chakras','Outline Chakras at the extreme ends'],['Lotus omitted','The bell-shaped lotus is left out']]),note:'Compare with the original: only 3 lions are visible and the lotus base is omitted.',draw:function(c){
+   var cx=210;
+   c.el('rect',{x:cx-160,y:188,width:320,height:58,rx:8,fill:'#FFF6EC',stroke:c.O,'stroke-width':2.5});
+   [[-48,0],[0,-1],[48,0]].forEach(function(d){lion(c,cx+(d[0]*1.9),(d[1]===-1?102:120),d[1]===-1?34:28);});
+   c.el('rect',{x:cx-100,y:160,width:200,height:28,rx:6,fill:'#FFE3CC',stroke:c.O});
+   c.el('circle',{cx:cx,cy:217,r:20,fill:'none',stroke:'#000080','stroke-width':2.4});for(var k=0;k<24;k++){var b=k*Math.PI/12;c.el('line',{x1:cx,y1:217,x2:cx+Math.cos(b)*20,y2:217+Math.sin(b)*20,stroke:'#000080','stroke-width':.9});}
+   c.el('path',{d:'M'+(cx+60)+' 232 q0 -24 22 -22 q14 0 20 10 l-4 12 z',fill:c.G});c.el('path',{d:'M'+(cx+84)+' 210 l-3 -10 m8 10 l3 -10',stroke:c.GD,'stroke-width':2.2,fill:'none'});
+   c.el('path',{d:'M'+(cx-104)+' 236 q4 -26 24 -26 q18 0 22 14 l-8 12 z',fill:c.O});c.el('path',{d:'M'+(cx-84)+' 210 l-4 -10',stroke:c.OD,'stroke-width':2.2,fill:'none'});
+   c.el('circle',{cx:cx-134,cy:217,r:12,fill:'none',stroke:'#000080','stroke-width':1.6,'stroke-dasharray':'3 3'});c.el('circle',{cx:cx+134,cy:217,r:12,fill:'none',stroke:'#000080','stroke-width':1.6,'stroke-dasharray':'3 3'});
+   c.text(cx-82,268,'Horse',{s:13,a:'middle',f:c.OD,w:700});c.text(cx,268,'Chakra',{s:13,a:'middle',f:'#000080',w:700});c.text(cx+82,268,'Bull',{s:13,a:'middle',f:c.GD,w:700});
+   c.text(cx,314,'सत्यमेव जयते',{s:26,w:700,a:'middle',f:c.GD});
+ }},
+ {t:'Motto & law',h:130,html:cards([['Motto','Satyameva Jayate — Truth alone triumphs'],['Source','Mundaka Upanishad (Devanagari script)'],['Act (2005)','State Emblem of India (Prohibition of Improper Use) Act'],['Rules (2007)','State Emblem of India (Regulation of Use) Rules, amended 2010']]),note:'Adopted 26 January 1950. Use of the emblem is regulated by the 2005 Act and the 2007 Rules (amended 2010).',draw:function(c){
+   var t=c.text(210,70,'सत्यमेव जयते',{s:38,w:700,a:'middle',f:c.GD});t.setAttribute('class','iyb-pop');
+   c.text(210,108,'Satyameva Jayate',{s:16,w:700,a:'middle',f:c.OD});
+ }}]});
+/* ---------- anthem ---------- */
+IYB.mount('fig-anthem',{label:'National Anthem step by step',w:420,minw:0,h:200,steps:[
+ {t:'From 1911 to 1950',h:170,html:cards([['27 Dec 1911','First sung at the Calcutta session of the INC. Composed in Bangla by Rabindranath Tagore'],['24 Jan 1950','Hindi version adopted by the Constituent Assembly']]),note:'Jana-gana-mana: composed in Bangla by Rabindranath Tagore.',draw:function(c){
+   c.el('line',{x1:70,x2:350,y1:85,y2:85,stroke:c.G,'stroke-width':5,'stroke-linecap':'round'});
+   [[70,'1911',c.G],[350,'1950',c.O]].forEach(function(k,i){var g=c.g({opacity:0});c.el('circle',{cx:k[0],cy:85,r:16,fill:k[2],stroke:'#fff','stroke-width':3},null,g);
+     c.text(k[0],50,k[1],{s:22,w:700,a:'middle',f:k[2]===c.O?c.OD:c.GD},g);c.after(function(){g.setAttribute('opacity',1);g.setAttribute('class','iyb-pop');},300+i*1200);});
+   var dot=c.el('circle',{cx:70,cy:85,r:7,fill:'#fff',stroke:c.OD,'stroke-width':3});c.after(function(){dot.style.transition='cx 1.4s ease-in-out';dot.setAttribute('cx',350);});
+   c.text(210,140,'39 years',{s:14,w:700,a:'middle',f:c.SUB});
+ }},
+ {t:'5 stanzas — only the first is the Anthem',h:236,note:'The full song has 5 stanzas; the first stanza is the official National Anthem.',draw:function(c){
+   for(var i=0;i<5;i++)(function(i){var y=12+i*44;var g=c.g({opacity:0});
+     c.el('rect',{x:20,y:y,width:380,height:36,rx:9,fill:i===0?c.O:'#DDF1E4',stroke:i===0?c.OD:c.G,'stroke-width':i===0?2.5:1},null,g);
+     c.text(36,y+24,'Stanza '+(i+1),{s:14,w:700,f:i===0?'#fff':c.GD},g);
+     if(i===0)c.text(384,y+24,'OFFICIAL',{s:13,w:700,f:'#fff',a:'end'},g);
+     c.after(function(){g.setAttribute('opacity',1);g.setAttribute('class','iyb-rise');},i*250);})(i);
+ }},
+ {t:'Playing time',h:220,html:cards([['Full version','About 52 seconds'],['Short version','First and last lines, about 20 seconds']]),note:'The rings run at 10× speed.',draw:function(c){
+   [[110,52,'52 sec',c.G],[310,20,'20 sec',c.O]].forEach(function(k){
+     var R=62,L=2*Math.PI*R;c.el('circle',{cx:k[0],cy:100,r:R,fill:'none',stroke:'#DDF1E4','stroke-width':14});
+     var r=c.el('circle',{cx:k[0],cy:100,r:R,fill:'none',stroke:k[3],'stroke-width':14,'stroke-linecap':'round','stroke-dasharray':L,'stroke-dashoffset':IYB.reduce?0:L,transform:'rotate(-90 '+k[0]+' 100)'});
+     c.text(k[0],107,k[2],{s:20,w:700,a:'middle',f:k[3]===c.O?c.OD:c.GD});
+     c.after(function(){r.style.transition='stroke-dashoffset '+(k[1]/10)+'s linear';r.setAttribute('stroke-dashoffset',0);});});
+   c.text(110,200,'Full',{s:14,w:700,a:'middle',f:c.INK});c.text(310,200,'Short',{s:14,w:700,a:'middle',f:c.INK});
+ }}]});
+/* ---------- song ---------- */
+IYB.mount('fig-song',{label:'Vande Mataram timeline',w:420,minw:0,h:360,steps:[{t:'Vande Mataram — 150 years',html:cards([['Sanskrit','Composed by Bankimchandra Chatterji'],['English rendering','By Sri Aurobindo']]),note:'Status equal to the National Anthem.',draw:function(c){
+   var ev=[['1875','First published'],['1896','First sung on a political platform (INC session)'],['1907','Aurobindo, 16 April, daily Bande Mataram'],['2025','150th anniversary: 7 November']];
+   var x=84,y0=30,dy=50;c.el('line',{x1:x,x2:x,y1:y0,y2:y0+dy*3,stroke:c.G,'stroke-width':4,'stroke-linecap':'round'});
+   ev.forEach(function(e,i){var y=y0+i*dy,g=c.g({opacity:0}),col=i===3?c.O:c.G;c.el('circle',{cx:x,cy:y,r:10,fill:col,stroke:'#fff','stroke-width':3},null,g);
+     c.text(x-18,y+5,e[0],{s:16,w:700,a:'end',f:col===c.O?c.OD:c.GD},g);wrap(c,x+20,y+(e[1].length>26?-3:5),e[1],{s:15,f:c.INK},26,17);
+     c.after(function(){g.setAttribute('opacity',1);g.setAttribute('class','iyb-pop');},i*450);});
+   c.el('circle',{cx:210,cy:270,r:52,fill:'#FFF1E0',stroke:c.O,'stroke-width':4});
+   var n=c.text(210,278,'0',{s:34,w:700,a:'middle',f:c.OD});c.text(210,308,'years',{s:13,a:'middle',f:c.SUB});
+   c.after(function(){var k=0,t=setInterval(function(){k+=5;n.textContent=Math.min(k,150);if(k>=150)clearInterval(t);},45);},500);
+ }}]});
+/* ---------- calendar ---------- */
+function monthGrid(c,hi,x0,y0){
+  for(var d=1;d<=31;d++){var i=d-1,col=i%7,row=Math.floor(i/7),x=x0+col*55,y=y0+row*38,on=d===hi;
+    var g=c.g({});c.el('rect',{x:x,y:y,width:50,height:33,rx:6,fill:on?c.O:'#fff',stroke:on?c.OD:'#BFE0CC','stroke-width':on?2.5:1},null,g);
+    c.text(x+25,y+22,d,{s:14,w:on?700:400,a:'middle',f:on?'#fff':c.INK},g);
+    if(on)g.setAttribute('class','iyb-pulse');}
+}
+IYB.mount('fig-cal',{label:'National Calendar step by step',w:420,minw:0,h:300,steps:[
+ {t:'Saka Era — the basis',h:150,html:cards([['Saka Era','A traditional calendar starting in 78 CE'],['First month','Chaitra; a normal year has 365 days'],['Adopted','22 March 1957, alongside the Gregorian calendar']]),note:'The National Calendar is based on the Saka Era.',draw:function(c){
+   c.el('line',{x1:70,x2:350,y1:80,y2:80,stroke:c.G,'stroke-width':5,'stroke-linecap':'round'});
+   [[70,'78 CE',c.G],[350,'1957',c.O]].forEach(function(k,i){var g=c.g({opacity:0});c.el('circle',{cx:k[0],cy:80,r:15,fill:k[2],stroke:'#fff','stroke-width':3},null,g);
+     c.text(k[0],46,k[1],{s:22,w:700,a:'middle',f:k[2]===c.O?c.OD:c.GD},g);c.after(function(){g.setAttribute('opacity',1);g.setAttribute('class','iyb-pop');},300+i*900);});
+ }},
+ {t:'Normal year: 1 Chaitra = 22 March',h:300,note:'In a normal year 1 Chaitra falls on 22 March.',draw:function(c){c.text(20,22,'March',{s:15,w:700,f:c.GD});monthGrid(c,22,18,32);c.text(210,262,'1 Chaitra = 22 March',{s:20,w:700,a:'middle',f:c.OD});c.text(210,286,'normal year (365 days)',{s:13,a:'middle',f:c.SUB});}},
+ {t:'Leap year: 1 Chaitra = 21 March',h:300,note:'In a leap year 1 Chaitra falls on 21 March.',draw:function(c){c.text(20,22,'March',{s:15,w:700,f:c.GD});monthGrid(c,21,18,32);c.text(210,262,'1 Chaitra = 21 March',{s:20,w:700,a:'middle',f:c.OD});c.text(210,286,'leap year (366 days)',{s:13,a:'middle',f:c.SUB});}},
+ {t:'Where it is used officially',h:20,html:cards([['1','Gazette of India'],['2','All India Radio news broadcasts'],['3','Government of India calendars'],['4','Government communications to the public']]),note:'Adopted alongside the Gregorian calendar for these four purposes.',draw:function(c){}}]});
+/* ---------- tiger & peacock ---------- */
+IYB.mount('fig-animal',{label:'National Animal and Bird',w:420,minw:0,h:230,steps:[{t:'Tiger & Peacock — re-notified 30 May 2011',html:cards([['National Bird','Peacock'],['National Animal','Tiger'],['Notification','30 May 2011, Wildlife Division of the then Ministry of Environment & Forests'],['Exam trap','The book says “re-notified”: the same status, declared again']]),note:'The word “re-notified” is a recurring trap in objective questions.',draw:function(c){
+   var pg=c.g({transform:'translate(-38 26) scale(.72)'});c.use(pg);
+   var px=180,py=215;
+   for(var i=0;i<11;i++){var a=(i-5)*14;var g=c.g({transform:'rotate('+a+' '+px+' '+py+')'});
+     var f=c.g({},g);
+     c.el('ellipse',{cx:px,cy:py-92,rx:13,ry:46,fill:i%2?c.G:c.GD,opacity:.95},null,f);
+     c.el('ellipse',{cx:px,cy:py-118,rx:8,ry:11,fill:c.OL},null,f);c.el('ellipse',{cx:px,cy:py-118,rx:4,ry:6,fill:c.O},null,f);c.el('circle',{cx:px,cy:py-118,r:2,fill:c.GD},null,f);
+     f.setAttribute('class','iyb-pop');f.style.animationDelay=(0.1*Math.abs(i-5))+'s';}
+   c.el('ellipse',{cx:px,cy:py-4,rx:20,ry:24,fill:c.GD});c.el('circle',{cx:px,cy:py-34,r:10,fill:c.G});
+   c.el('path',{d:'M'+(px-4)+' '+(py-44)+' l-2 -12 M'+px+' '+(py-44)+' l0 -14 M'+(px+4)+' '+(py-44)+' l2 -12',stroke:c.GD,'stroke-width':1.5,fill:'none'});
+   c.el('path',{d:'M'+(px+8)+' '+(py-34)+' l8 3 l-8 3z',fill:c.O});
+   c.use(null);
+   var tg=c.g({'class':'iyb-fade',transform:'translate(126 40) scale(.72)'});c.use(tg);
+   var tx=270,ty=130;
+   c.el('circle',{cx:tx-52,cy:ty-52,r:20,fill:c.O,stroke:c.OD,'stroke-width':2});c.el('circle',{cx:tx+52,cy:ty-52,r:20,fill:c.O,stroke:c.OD,'stroke-width':2});
+   c.el('circle',{cx:tx,cy:ty,r:68,fill:c.O,stroke:c.OD,'stroke-width':3});
+   [['M-12 -64 l4 22 l8 -22','M0 -66 l0 24','M12 -64 l-4 22'],['M-66 -10 l24 4','M-66 12 l22 -2','M66 -10 l-24 4','M66 12 l-22 -2']].forEach(function(grp){grp.forEach(function(d){c.el('path',{d:d,stroke:c.GD,'stroke-width':4,'stroke-linecap':'round',fill:'none',transform:'translate('+tx+' '+ty+')'});});});
+   c.el('ellipse',{cx:tx,cy:ty+28,rx:34,ry:26,fill:'#FFF1E0'});
+   c.el('ellipse',{cx:tx-24,cy:ty-8,rx:8,ry:6,fill:'#fff',stroke:c.GD,'stroke-width':1.5});c.el('ellipse',{cx:tx+24,cy:ty-8,rx:8,ry:6,fill:'#fff',stroke:c.GD,'stroke-width':1.5});
+   c.el('circle',{cx:tx-24,cy:ty-8,r:3.5,fill:c.GD});c.el('circle',{cx:tx+24,cy:ty-8,r:3.5,fill:c.GD});
+   c.el('path',{d:'M'+(tx-9)+' '+(ty+14)+' L'+(tx+9)+' '+(ty+14)+' L'+tx+' '+(ty+26)+'Z',fill:c.GD});
+   c.el('path',{d:'M'+tx+' '+(ty+26)+' q-10 12 -20 4 M'+tx+' '+(ty+26)+' q10 12 20 4',stroke:c.GD,'stroke-width':2.2,fill:'none','stroke-linecap':'round'});
+   c.use(null);
+   c.text(95,214,'Peacock',{s:15,w:700,a:'middle',f:c.GD});c.text(320,214,'Tiger',{s:15,w:700,a:'middle',f:c.OD});
+ }}]});
+
+
+})();
+</script>
+<!-- ===================== MCQ / PYQ QUIZ ===================== -->
+<div class="quiz-head"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg><h2>Practice MCQs — Chapter 2</h2></div>
+<div class="quiz-controls">
+  <button class="quiz-toggle active" id="filterAll">All Questions</button>
+  <button class="quiz-toggle" id="filterPyq">PYQ Only</button>
+  <div class="score-panel">Score: <b id="scoreVal">0</b>/<span id="totalVal">8</span></div>
+</div>
+<div class="q-progress-wrap"><div class="q-progress-bar" id="qProgressBar"></div></div>
+
+<div id="quizList">
+
+<div class="q-card" data-pyq="1">
+  <div class="q-meta"><span class="badge pyq">PYQ · APPSC Gr-2 2022</span><span class="badge medium">Medium</span></div>
+  <div class="q-text">Q1. The National Flag must be made of hand-spun/handwoven cloth of which material as per the Flag Code?</div>
+  <div class="q-opts">
+    <button class="q-opt">Cotton only</button>
+    <button class="q-opt" data-correct="true">Khadi cotton/silk</button>
+    <button class="q-opt">Polyester</button>
+    <button class="q-opt">Wool</button>
+  </div>
+  <div class="q-explain">The Flag must be Khadi (hand-spun/handwoven) cotton or silk yarn cloth. Plastic flags are prohibited as they are non-biodegradable.</div>
+</div>
+
+<div class="q-card" data-pyq="0">
+  <div class="q-meta"><span class="badge medium">Medium</span></div>
+  <div class="q-text">Q2. The State Emblem of India was adopted on:</div>
+  <div class="q-opts">
+    <button class="q-opt">15 August 1947</button>
+    <button class="q-opt" data-correct="true">26 January 1950</button>
+    <button class="q-opt">24 January 1950</button>
+    <button class="q-opt">22 March 1957</button>
+  </div>
+  <div class="q-explain">The State Emblem was adopted on 26 January 1950 — the same date the Constitution came into force.</div>
+</div>
+
+<div class="q-card" data-pyq="1">
+  <div class="q-meta"><span class="badge pyq">PYQ · UPSC Prelims 2021</span><span class="badge hard">Hard</span></div>
+  <div class="q-text">Q3. In the original Lion Capital of Ashoka at Sarnath, how many lions are mounted on the abacus?</div>
+  <div class="q-opts">
+    <button class="q-opt">3</button>
+    <button class="q-opt" data-correct="true">4</button>
+    <button class="q-opt">6</button>
+    <button class="q-opt">2</button>
+  </div>
+  <div class="q-explain">The original has 4 lions mounted back-to-back. The State Emblem shows only 3 visible in profile (the 4th is hidden behind); the bell-shaped lotus is also omitted in the Emblem version.</div>
+</div>
+
+<div class="q-card" data-pyq="0">
+  <div class="q-meta"><span class="badge medium">Medium</span></div>
+  <div class="q-text">Q4. "Jana-gana-mana" was first sung at which session?</div>
+  <div class="q-opts">
+    <button class="q-opt">1911 Lahore Session</button>
+    <button class="q-opt" data-correct="true">1911 Calcutta Session of INC</button>
+    <button class="q-opt">1929 Lahore Session</button>
+    <button class="q-opt">1885 Bombay Session</button>
+  </div>
+  <div class="q-explain">First sung on 27 December 1911 at the Calcutta Session of the Indian National Congress; adopted as National Anthem on 24 January 1950.</div>
+</div>
+
+<div class="q-card" data-pyq="1">
+  <div class="q-meta"><span class="badge pyq">PYQ · TGPSC 2023</span><span class="badge medium">Medium</span></div>
+  <div class="q-text">Q5. The playing time of the full version of the National Anthem is approximately:</div>
+  <div class="q-opts">
+    <button class="q-opt">20 seconds</button>
+    <button class="q-opt">35 seconds</button>
+    <button class="q-opt" data-correct="true">52 seconds</button>
+    <button class="q-opt">90 seconds</button>
+  </div>
+  <div class="q-explain">Full version ≈ 52 seconds; short version (first & last lines) ≈ 20 seconds.</div>
+</div>
+
+<div class="q-card" data-pyq="0">
+  <div class="q-meta"><span class="badge easy">Easy</span></div>
+  <div class="q-text">Q6. Vande Mataram was composed by:</div>
+  <div class="q-opts">
+    <button class="q-opt">Rabindranath Tagore</button>
+    <button class="q-opt" data-correct="true">Bankimchandra Chatterji</button>
+    <button class="q-opt">Sri Aurobindo</button>
+    <button class="q-opt">Sarojini Naidu</button>
+  </div>
+  <div class="q-explain">Composed in Sanskrit by Bankimchandra Chatterji; first published in 1875, first sung on a political platform at the 1896 INC session.</div>
+</div>
+
+<div class="q-card" data-pyq="1">
+  <div class="q-meta"><span class="badge pyq">PYQ · SSC CGL 2022</span><span class="badge medium">Medium</span></div>
+  <div class="q-text">Q7. India's National Calendar (Saka Era) was adopted alongside the Gregorian calendar on:</div>
+  <div class="q-opts">
+    <button class="q-opt">26 January 1950</button>
+    <button class="q-opt" data-correct="true">22 March 1957</button>
+    <button class="q-opt">15 August 1947</button>
+    <button class="q-opt">1 April 1952</button>
+  </div>
+  <div class="q-explain">Adopted 22 March 1957, first month Chaitra; 1 Chaitra = 22 March normally, 21 March in a leap year.</div>
+</div>
+
+<div class="q-card" data-pyq="0">
+  <div class="q-meta"><span class="badge medium">Medium</span></div>
+  <div class="q-text">Q8. Tiger and Peacock were re-notified as National Animal and National Bird via a notification dated:</div>
+  <div class="q-opts">
+    <button class="q-opt" data-correct="true">30 May 2011</button>
+    <button class="q-opt">1 April 1973</button>
+    <button class="q-opt">5 June 1972</button>
+    <button class="q-opt">26 January 1950</button>
+  </div>
+  <div class="q-explain">Re-notified by the Wildlife Division of the then-Ministry of Environment and Forests on 30 May 2011.</div>
+</div>
+
+</div>
+
+<div class="quiz-footer-bar">
+  <button class="quiz-btn" id="showAllBtn">Show All Answers</button>
+  <button class="quiz-btn" id="resetBtn">Reset Quiz</button>
+</div>
+
+<div class="result-panel" id="resultPanel">
+  <div class="big-score" id="finalScore">0/8</div>
+  <div class="acc" id="finalAcc">0% accuracy</div>
+</div>
+
+</main>
+
+<div class="next-nav"><span class="btn">Next → Part 3: Chapter 3, Polity</span></div>
+
+<footer>
+  Compiled by the <b>VibhillionAI</b> Team from Bharat 2026 (India Year Book), Publications Division, Ministry of Information & Broadcasting, Govt. of India &mdash; for UPSC / APPSC / TGPSC / SSC CGL exam preparation.
+  <br>
+  <svg width="60" height="14" viewBox="0 0 60 14"><rect x="0" y="0" width="20" height="14" fill="#FF9933"/><rect x="20" y="0" width="20" height="14" fill="#ffffff"/><circle cx="30" cy="7" r="3" fill="none" stroke="#14532D" stroke-width="0.6"/><rect x="40" y="0" width="20" height="14" fill="#128808"/></svg>
+  <span class="pill">Chapter 2 · National Symbols</span>
+</footer>
+
+<script>
+const bar = document.getElementById('progress-bar');
+const pct = document.getElementById('cornerPct');
+window.addEventListener('scroll', () => {
+  const h = document.documentElement;
+  const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+  bar.style.width = scrolled + '%';
+  pct.textContent = Math.round(scrolled) + '%';
+});
+const spokes = document.getElementById('spokes');
+for (let i = 0; i < 24; i++) {
+  const angle = (i * 15) * Math.PI / 180;
+  const x2 = 50 + 40 * Math.cos(angle);
+  const y2 = 50 + 40 * Math.sin(angle);
+  const line = document.createElementNS('http://www.w3.org/2000/svg','line');
+  line.setAttribute('x1', 50); line.setAttribute('y1', 50);
+  line.setAttribute('x2', x2); line.setAttribute('y2', y2);
+  line.setAttribute('stroke', '#6B8E23'); line.setAttribute('stroke-width', '1');
+  spokes.appendChild(line);
+}
+
+// ===== MCQ / PYQ QUIZ LOGIC =====
+let score = 0;
+let answered = 0;
+const totalQ = document.querySelectorAll('.q-card').length;
+document.getElementById('totalVal').textContent = totalQ;
+
+document.querySelectorAll('.q-card').forEach(card => {
+  const opts = card.querySelectorAll('.q-opt');
+  opts.forEach(opt => {
+    opt.addEventListener('click', () => {
+      if (card.classList.contains('answered')) return;
+      card.classList.add('answered');
+      answered++;
+      const isCorrect = opt.dataset.correct === 'true';
+      if (isCorrect) score++;
+      opts.forEach(o => {
+        o.classList.add('locked');
+        if (o.dataset.correct === 'true') o.classList.add('correct');
+        else if (o === opt) o.classList.add('incorrect');
+      });
+      card.querySelector('.q-explain').classList.add('show');
+      document.getElementById('scoreVal').textContent = score;
+      const pct = (answered / totalQ) * 100;
+      document.getElementById('qProgressBar').style.width = pct + '%';
+      if (answered === totalQ) showResult();
+    });
+  });
+});
+
+function showResult(){
+  const panel = document.getElementById('resultPanel');
+  panel.classList.add('show');
+  document.getElementById('finalScore').textContent = score + '/' + totalQ;
+  document.getElementById('finalAcc').textContent = Math.round((score/totalQ)*100) + '% accuracy';
+}
+
+document.getElementById('showAllBtn').addEventListener('click', () => {
+  document.querySelectorAll('.q-card').forEach(card => {
+    if (card.classList.contains('answered')) return;
+    card.classList.add('answered');
+    answered++;
+    const opts = card.querySelectorAll('.q-opt');
+    opts.forEach(o => {
+      o.classList.add('locked');
+      if (o.dataset.correct === 'true') o.classList.add('correct');
+    });
+    card.querySelector('.q-explain').classList.add('show');
+  });
+  document.getElementById('qProgressBar').style.width = '100%';
+  showResult();
+});
+
+document.getElementById('resetBtn').addEventListener('click', () => location.reload());
+
+document.getElementById('filterAll').addEventListener('click', () => {
+  document.querySelectorAll('.q-card').forEach(c => c.classList.remove('hidden-filter'));
+  document.getElementById('filterAll').classList.add('active');
+  document.getElementById('filterPyq').classList.remove('active');
+});
+document.getElementById('filterPyq').addEventListener('click', () => {
+  document.querySelectorAll('.q-card').forEach(c => {
+    if (c.dataset.pyq === '1') c.classList.remove('hidden-filter');
+    else c.classList.add('hidden-filter');
+  });
+  document.getElementById('filterPyq').classList.add('active');
+  document.getElementById('filterAll').classList.remove('active');
+});
+</script>
+</body>
+</html>
