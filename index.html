@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#14532D">
+<title>India Year Book 2026 · VibhillionAI</title>
+<script>
+(function(){try{var t=localStorage.getItem('iyb_theme');if(!t&&window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)t='dark';
+if(t==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();
+</script>
+<style>
+:root{
+  --bg:#FBF8F0; --card:#FFFFFF; --card2:#F3EEDF; --ink:#1E2A21; --sub:#6B6558; --line:rgba(154,107,8,.22);
+  --forest:#14532D; --sea:#2E8B57; --teal:#0F8577; --olive:#6B8E23; --mint:#6FCF97;
+  --saffron:#D9720A; --chakra:#0B3D91; --gold:#9A6B08;
+  --glass:rgba(251,248,240,.96);
+  --serif:Georgia,'Noto Serif','Times New Roman',serif;
+  --mono:'Courier New',Courier,monospace;
+  --sans:system-ui,-apple-system,'Segoe UI',Roboto,'Noto Sans',sans-serif;
+}
+html[data-theme="dark"]{color-scheme:dark;
+  --bg:#0C1511; --card:#14211A; --card2:#1A2B21; --ink:#E6EFE8; --sub:#9DB0A4; --line:rgba(111,207,151,.2);
+  --forest:#1F7A44; --glass:rgba(12,21,17,.96); --gold:#E3B25A; --saffron:#FF9A3D;}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.5;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--saffron);outline-offset:2px;border-radius:8px}
+[hidden]{display:none!important}
+svg{flex:none}
+
+/* ---------- top bar ---------- */
+.topbar{position:sticky;top:0;z-index:30;height:58px;display:flex;align-items:center;gap:2px;padding:0 6px 0 10px;background:var(--glass);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.topbar::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:3px;background:linear-gradient(90deg,#FF9933 0 33.3%,#fff 33.3% 66.6%,#138808 66.6%)}
+html[data-theme="dark"] .topbar::after{background:linear-gradient(90deg,#FF9933 0 33.3%,#d8d8d8 33.3% 66.6%,#138808 66.6%)}
+.brand{display:flex;align-items:center;gap:10px;min-width:0;flex:1}
+.brand img{width:36px;height:36px;border-radius:10px;flex:none}
+.brand b{display:block;font-family:var(--serif);font-size:15.5px;line-height:1.15}
+.brand small{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:var(--sub)}
+.tb-title{flex:1;min-width:0;line-height:1.2;padding-left:2px}
+.tb-title b{display:block;font-family:var(--serif);font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tb-title small{display:block;font-size:11px;color:var(--sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ib{width:40px;height:44px;border:0;background:none;border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--ink)}
+.ib:hover{background:var(--card2)}
+.ib[aria-disabled="true"]{opacity:.28;pointer-events:none}
+.theme-btn svg{display:none}
+html:not([data-theme="dark"]) .theme-btn .i-moon{display:block}
+html[data-theme="dark"] .theme-btn .i-sun{display:block}
+.logo-only{width:36px;height:36px;border-radius:10px;flex:none}
+
+/* ---------- layout ---------- */
+.view{max-width:860px;margin:0 auto;padding:16px 16px 40px;display:flex;flex-direction:column;gap:18px}
+.fade{animation:fd .25s ease}
+@keyframes fd{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;border-radius:22px;color:#fff;padding:22px 20px 20px;background:
+  radial-gradient(circle at 88% 12%,rgba(255,255,255,.14),transparent 45%),linear-gradient(135deg,#14532D 0%,#0F8577 100%)}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;background:linear-gradient(90deg,#FF9933 0 33.3%,#fff 33.3% 66.6%,#138808 66.6%)}
+.hero .chakra{position:absolute;right:-26px;top:-26px;width:150px;height:150px;opacity:.28}
+.eyebrow{position:relative;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.14em;color:#FFD9A8}
+.hero h1{position:relative;font-family:var(--serif);font-size:30px;line-height:1.15;margin:8px 0 6px;max-width:calc(100% - 60px)}
+.hero p{position:relative;font-size:13.5px;line-height:1.6;color:#E3F3EA;max-width:560px}
+.stats{position:relative;display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+.stat{padding:9px 14px;border-radius:14px;background:rgba(0,0,0,.24);min-width:92px}
+.stat b{display:block;font-family:var(--mono);font-size:22px;color:#FFC46B}
+.stat span{font-size:11.5px;color:#D5EBDD}
+.bar{position:relative;margin-top:14px;height:8px;border-radius:99px;background:rgba(0,0,0,.28);overflow:hidden}
+.bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#FFB05A,#6FCF97)}
+
+/* ---------- search + continue ---------- */
+.search label{display:flex;align-items:center;gap:10px;height:50px;padding:0 14px;background:var(--card);border:1.5px solid var(--line);border-radius:14px}
+.search label:focus-within{border-color:var(--sea)}
+.search input{flex:1;min-width:0;border:0;outline:0;background:transparent;font-size:14.5px;color:var(--ink)}
+.search input::placeholder{color:var(--sub)}
+.cont{display:flex;align-items:center;gap:14px;padding:14px;border-radius:18px;background:var(--card);border:1px solid var(--line);border-left:6px solid var(--saffron)}
+.cont .t{flex:1;min-width:0}
+.cont .k{font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.12em;color:var(--saffron)}
+.cont b{display:block;font-family:var(--serif);font-size:16px;margin-top:2px}
+.cont span{font-size:12px;color:var(--sub)}
+.go{width:40px;height:40px;border-radius:50%;background:var(--forest);color:#fff;display:flex;align-items:center;justify-content:center}
+
+/* ---------- parts ---------- */
+.sec-title{font-family:var(--mono);font-size:11.5px;font-weight:700;letter-spacing:.14em;color:var(--sub);padding-left:2px}
+.part{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;border-left:6px solid var(--pc)}
+.part>summary{list-style:none;display:flex;align-items:center;gap:12px;padding:14px 14px;cursor:pointer;min-height:64px}
+.part>summary::-webkit-details-marker{display:none}
+.roman{flex:none;min-width:44px;height:44px;border-radius:12px;background:var(--pc);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;font-size:16px}
+.part .pt{flex:1;min-width:0}
+.part .pt b{display:block;font-family:var(--serif);font-size:15.5px;line-height:1.25}
+.part .pt small{font-family:var(--mono);font-size:10.5px;color:var(--sub);letter-spacing:.06em}
+.pill{font-family:var(--mono);font-size:11px;font-weight:700;padding:4px 10px;border-radius:99px;background:var(--card2);color:var(--sub);white-space:nowrap}
+.pill.done{background:var(--pc);color:#fff}
+.chev{transition:transform .2s;color:var(--sub)}
+.part[open] .chev{transform:rotate(180deg)}
+.chs{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.ch{display:flex;align-items:center;gap:12px;padding:12px 14px;min-height:56px;border-bottom:1px solid var(--line)}
+.ch:last-child{border-bottom:0}
+.ch .no{flex:none;width:34px;font-family:var(--mono);font-weight:700;font-size:15px;color:var(--pc)}
+.ch .nm{flex:1;min-width:0;font-size:14.5px;font-weight:600;line-height:1.35}
+.ch.ready:hover{background:var(--card2)}
+.ch .st{flex:none;font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.04em}
+.ch.ready .st{color:var(--sea)}
+.ch.soon{opacity:.55}
+.ch.soon .st{color:var(--sub)}
+.ch .arr{flex:none;color:var(--pc)}
+
+/* ---------- search results / misc ---------- */
+.res{display:flex;flex-direction:column;gap:10px}
+.rrow{display:flex;gap:12px;padding:13px 14px;border-radius:16px;background:var(--card);border:1px solid var(--line);border-left:6px solid var(--pc)}
+.rrow .no{font-family:var(--mono);font-weight:700;color:var(--pc);width:30px;flex:none}
+.rrow b{display:block;font-family:var(--serif);font-size:15.5px}
+.rrow small{display:block;font-size:12px;color:var(--sub);margin-top:2px}
+.rrow mark{background:rgba(255,154,61,.35);color:inherit;border-radius:3px}
+.empty{padding:22px;text-align:center;color:var(--sub);font-size:14px;background:var(--card);border:1.5px dashed var(--line);border-radius:18px}
+.note{padding:13px 14px;border-radius:14px;background:var(--card2);font-size:12.5px;line-height:1.55;border-left:4px solid var(--saffron)}
+.loading{display:flex;align-items:center;justify-content:center;gap:10px;padding:40px;color:var(--sub)}
+.spin{width:22px;height:22px;border-radius:50%;border:3px solid var(--line);border-top-color:var(--sea);animation:sp .8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.foot{margin-top:6px;padding:20px 16px;text-align:center;font-size:12px;color:var(--sub);border-top:1px solid var(--line)}
+.foot .pillf{display:inline-block;margin-top:8px;padding:5px 14px;border-radius:99px;background:var(--forest);color:#fff;font-family:var(--mono);font-size:11px;font-weight:700}
+
+/* ---------- full-screen chapter ---------- */
+body.reading{overflow:hidden}
+iframe.chapter{position:fixed;left:0;right:0;bottom:0;top:61px;width:100%;height:calc(100% - 61px);border:0;background:#FBF8F0;z-index:10}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/" id="brand"><img id="logo" alt="VibhillionAI" width="36" height="36"><span id="brandTxt"><b>India Year Book 2026</b><small>BHARAT 2026 · NOTES</small></span></a>
+  <a class="ib" id="backBtn" href="#/" aria-label="Back" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></a>
+  <div class="tb-title" id="tbTitle" hidden></div>
+  <a class="ib" id="prevBtn" href="#/" aria-label="Previous chapter" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/><path d="M6 5v14" stroke-width="2"/></svg></a>
+  <a class="ib" id="nextBtn" href="#/" aria-label="Next chapter" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/><path d="M18 5v14" stroke-width="2"/></svg></a>
+  <button class="ib theme-btn" id="themeBtn" type="button" aria-label="Dark / Light" title="Dark / Light"><svg class="i-moon" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="i-sun" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+  <a class="ib" id="searchBtn" href="#/search" aria-label="Search"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></a>
+</header>
+<main class="view" id="view" tabindex="-1"></main>
+
+<script>
+(function(){
+  var root=document.documentElement, meta=document.querySelector('meta[name="theme-color"]'), mq=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)');
+  function paint(){ if(meta) meta.setAttribute('content', root.getAttribute('data-theme')==='dark'?'#0C1511':'#14532D'); }
+  function setTheme(t,save){ if(t==='dark') root.setAttribute('data-theme','dark'); else root.removeAttribute('data-theme'); paint();
+    if(save){ try{localStorage.setItem('iyb_theme',t);}catch(e){} } }
+  paint();
+  document.getElementById('themeBtn').addEventListener('click',function(){ setTheme(root.getAttribute('data-theme')==='dark'?'light':'dark',true); });
+  if(mq&&mq.addEventListener) mq.addEventListener('change',function(e){ var sv=null; try{sv=localStorage.getItem('iyb_theme');}catch(_){} if(!sv) setTheme(e.matches?'dark':'light',false); });
+})();
+</script>
+<script>
+(function(){
+'use strict';
+/* ============ CONFIG ============ */
+var CONFIG = {
+  siteBase: 'https://aivibhillion.github.io/India-Year-Book/',   // link of your GitHub Pages site (Settings -> Pages). Needed because this code is pasted inside the app
+  indexJson: 'content-index.json',                                // written by build-index.py on every deploy
+  logoSrc: 'data:image/jpeg;base64,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'   // VibhillionAI logo (embedded, so it works when pasted inside the app)
+};
+var PART_COLORS = ['#D9720A','#14532D','#0B3D91','#0F8577','#6B8E23','#8B2635','#5B3E96','#B7791F','#475569'];   // colour-coded Parts, like the printed book
+
+/* ============ helpers ============ */
+var $=function(s,r){return (r||document).querySelector(s);};
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+var store={get:function(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d;}catch(e){return d;}},set:function(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}};
+var CHEV='<svg class="arr" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>';
+var DOWN='<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>';
+var SEARCH='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>';
+$('#logo').src=CONFIG.logoSrc;
+
+/* ============ data ============ */
+var PARTS=[], CHS=[];   // CHS: every chapter in book order, with part info
+function build(data){
+  PARTS=(data&&data.parts)||[]; CHS=[];
+  PARTS.forEach(function(p,pi){ p.color=PART_COLORS[pi%PART_COLORS.length]; p.chapters.forEach(function(c){c.part=p; c.pi=pi; CHS.push(c);}); });
+}
+function byN(n){for(var i=0;i<CHS.length;i++) if(CHS[i].n===n) return CHS[i]; return null;}
+function readyList(){return CHS.filter(function(c){return c.ready;});}
+function url(c){return CONFIG.siteBase+encodeURI(c.path);}
+function ttl(c){return (c.span&&c.span.length>1&&c.fileTitle)?c.fileTitle:c.title;}
+function label(c){return (c.span&&c.span.length>1)?('Ch. '+c.span[0]+'–'+c.span[c.span.length-1]):('Ch. '+c.n);}
+
+/* ============ chrome ============ */
+var view=$('#view');
+function chrome(o){
+  $('#brandTxt').hidden=!!o.back;                          // logo stays on inner pages, name hides
+  var b=$('#backBtn'); b.hidden=!o.back; if(o.back) b.setAttribute('href',o.back);
+  var t=$('#tbTitle'); t.hidden=!o.title; t.innerHTML=o.title?'<b>'+esc(o.title)+'</b>'+(o.sub?'<small>'+esc(o.sub)+'</small>':''):'';
+  [['prevBtn',o.prev],['nextBtn',o.next]].forEach(function(x){
+    var el=$('#'+x[0]); el.hidden=!o.nav; if(o.nav){ if(x[1]){el.setAttribute('href',x[1]); el.removeAttribute('aria-disabled');} else {el.setAttribute('aria-disabled','true'); el.setAttribute('href','#/');} } });
+  $('#searchBtn').hidden=!!o.nav;
+  document.body.classList.toggle('reading',!!o.reading);
+  document.title=(o.title?o.title+' · ':'')+'India Year Book 2026 · VibhillionAI';
+}
+
+/* ============ screens ============ */
+function chakra(){
+  var s='';for(var i=0;i<24;i++){var a=i*15*Math.PI/180;s+='<line x1="50" y1="50" x2="'+(50+40*Math.cos(a)).toFixed(2)+'" y2="'+(50+40*Math.sin(a)).toFixed(2)+'" stroke="#fff" stroke-width="1"/>';}
+  return '<svg class="chakra" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="none" stroke="#fff" stroke-width="2.5"/><circle cx="50" cy="50" r="4" fill="#fff"/>'+s+'</svg>';
+}
+function chRow(c){
+  var st=c.part.color;
+  if(c.ready) return '<a class="ch ready" style="--pc:'+st+'" href="#/read/'+c.n+'"><span class="no">'+(c.n<10?'0':'')+c.n+'</span><span class="nm">'+esc(c.title)+'</span><span class="st">READY</span>'+CHEV+'</a>';
+  return '<div class="ch soon" style="--pc:'+st+'"><span class="no">'+(c.n<10?'0':'')+c.n+'</span><span class="nm">'+esc(c.title)+'</span><span class="st">COMING SOON</span></div>';
+}
+function home(){
+  chrome({});
+  var ready=readyList(), total=CHS.length, last=store.get('iyb_last',null), lc=last?byN(last):null; if(lc&&!lc.ready) lc=null;
+  var openIdx=lc?lc.pi:Math.max(0,PARTS.findIndex(function(p){return p.chapters.some(function(c){return c.ready;});}));
+  view.innerHTML=
+  '<section class="hero fade">'+chakra()+'<div class="eyebrow">BHARAT 2026 · A REFERENCE ANNUAL</div><h1>India Year Book 2026</h1>'+
+    '<p>Complete study notes, chapter by chapter, with Word Banks and practice MCQs for UPSC, APPSC, TGPSC and SSC exams.</p>'+
+    '<div class="stats"><div class="stat"><b>'+ready.length+' / '+total+'</b><span>Chapters ready</span></div><div class="stat"><b>'+PARTS.length+'</b><span>Parts</span></div></div>'+
+    (total?'<div class="bar" aria-hidden="true"><i style="width:'+Math.round(ready.length/total*100)+'%"></i></div>':'')+'</section>'+
+  '<form class="search" role="search" onsubmit="return false"><label>'+SEARCH+'<input id="q" type="search" autocomplete="off" placeholder="Search chapter or topic"></label></form>'+
+  (lc?'<a class="cont fade" href="#/read/'+lc.n+'"><div class="t"><div class="k">CONTINUE READING</div><b>'+esc(label(lc)+' · '+ttl(lc))+'</b><span>Part '+esc(lc.part.roman)+' · '+esc(lc.part.name)+'</span></div><span class="go">'+CHEV.replace('class="arr"','')+'</span></a>':'')+
+  '<div class="sec-title">THE BOOK · '+PARTS.length+' PARTS</div>'+
+  (PARTS.length?PARTS.map(function(p,pi){
+    var r=p.chapters.filter(function(c){return c.ready;}).length;
+    return '<details class="part fade" style="--pc:'+p.color+'"'+(pi===openIdx?' open':'')+'><summary><span class="roman">'+esc(p.roman)+'</span><span class="pt"><b>'+esc(p.name)+'</b><small>CHAPTERS '+p.chapters[0].n+(p.chapters.length>1?'–'+p.chapters[p.chapters.length-1].n:'')+'</small></span><span class="pill'+(r===p.chapters.length?' done':'')+'">'+r+'/'+p.chapters.length+'</span>'+DOWN+'</summary><div class="chs">'+p.chapters.map(chRow).join('')+'</div></details>';
+  }).join(''):'<div class="empty">No chapters yet. Add a chapter file to the <b>chapters</b> folder and push.</div>')+
+  '<div class="foot">© vibhillionai · Material prepared by <b>VibhillionAI Team</b><br>Notes based on <i>India Year Book 2026 (Bharat 2026)</i>. Independent study notes.<br><span class="pillf">VibhillionAI</span></div>';
+  var q=$('#q'); if(q) q.addEventListener('keydown',function(e){if(e.key==='Enter'&&q.value.trim()) location.hash='#/search/'+encodeURIComponent(q.value.trim());});
+}
+function read(n){
+  var c=byN(n); if(!c||!c.ready) return nf();
+  var list=readyList().filter(function(x,i,a){return !i||x.path!==a[i-1].path;});     // one entry per file
+  var i=-1; list.forEach(function(x,k){if(x.path===c.path&&i<0)i=k;});
+  var prev=list[i-1], next=list[i+1];
+  store.set('iyb_last',c.n);
+  chrome({back:'#/',nav:true,reading:true,title:label(c)+' · '+ttl(c),sub:'Part '+c.part.roman+' · '+c.part.name,
+          prev:prev?'#/read/'+prev.n:null,next:next?'#/read/'+next.n:null});
+  view.innerHTML='<iframe class="chapter" title="'+esc(c.title)+'" src="'+esc(url(c))+'" allowfullscreen></iframe>';
+}
+function search(q){
+  chrome({back:'#/',title:'Search',sub:'India Year Book 2026'});
+  q=(q||'').trim(); var res=[], re=null;
+  if(q){
+    var terms=q.toLowerCase().split(/\s+/);
+    re=new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','ig');
+    readyList().forEach(function(c){
+      var hay=(c.title+' '+c.part.name+' '+(c.sections||[]).join(' ')).toLowerCase();
+      if(terms.every(function(t){return hay.indexOf(t)>=0;})){
+        var hit=(c.sections||[]).filter(function(s){return terms.some(function(t){return s.toLowerCase().indexOf(t)>=0;});}).slice(0,3);
+        res.push([c,hit]);
+      }
+    });
+  }
+  var hl=function(s){return esc(s).replace(re||/$^/,'<mark>$1</mark>');};
+  view.innerHTML='<form class="search" role="search" onsubmit="return false"><label>'+SEARCH+'<input id="q" type="search" autocomplete="off" value="'+esc(q)+'" placeholder="Search chapter or topic"></label></form>'+
+    (!q?'<div class="empty">Type a chapter name or a topic, e.g. <i>Polity</i>, <i>Railways</i>.</div>':
+      res.length?'<div class="res">'+res.slice(0,60).map(function(r){var c=r[0];return '<a class="rrow" style="--pc:'+c.part.color+'" href="#/read/'+c.n+'"><span class="no">'+(c.n<10?'0':'')+c.n+'</span><span><b>'+hl(c.title)+'</b><small>Part '+esc(c.part.roman)+' · '+esc(c.part.name)+'</small>'+(r[1].length?'<small>'+r[1].map(hl).join(' · ')+'</small>':'')+'</span></a>';}).join('')+'</div>':
+      '<div class="empty">No chapter matches “'+esc(q)+'”.</div>');
+  var inp=$('#q'),tm; if(inp){ if(!q) inp.focus();
+    inp.addEventListener('input',function(){clearTimeout(tm);tm=setTimeout(function(){history.replaceState(null,'','#/search/'+encodeURIComponent(inp.value.trim()));route();},350);});}
+}
+function nf(){chrome({back:'#/',title:'Not found'});view.innerHTML='<div class="empty">This chapter is not added yet. <a href="#/" style="color:var(--sea);font-weight:700">Go to the book</a></div>';}
+
+/* ============ router ============ */
+function route(){
+  var p=decodeURIComponent(location.hash.replace(/^#\/?/,'')).split('/').filter(Boolean);
+  if(p[0]==='read') {read(parseInt(p[1],10)); return;}
+  window.scrollTo(0,0);
+  if(p[0]==='search') search(p.slice(1).join('/')); else home();
+}
+window.addEventListener('hashchange',route);
+
+/* ============ boot ============ */
+view.innerHTML='<div class="loading"><span class="spin"></span>Loading…</div>';
+fetch(CONFIG.siteBase+CONFIG.indexJson,{cache:'no-cache'}).then(function(r){if(!r.ok)throw 0;return r.json();})
+  .then(function(d){build(d);route();})
+  .catch(function(){build({parts:[]});route();view.insertAdjacentHTML('afterbegin','<div class="note">Could not load <b>content-index.json</b>. Check the internet connection, and that the <b>Actions</b> tab of the repo shows a green run of the Pages workflow.</div>');});
+})();
+</script>
+</body>
+</html>
