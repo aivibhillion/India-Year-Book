@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>India Year Book 2026 | Ch.4 Defence</title>
+<style>
+:root{
+  --bg:#FBF8F0; --card:#FFFFFF;
+  --saffron:#2E8B57; --green:#0F8577; --chakra:#14532D;
+  --ink:#1F2E2B; --sub:#5B6F6A; --gold:#6B8E23;
+  --border:rgba(107,142,35,0.22);
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+body{
+  background:
+    radial-gradient(ellipse 800px 400px at 10% -5%, rgba(46,139,87,0.07), transparent),
+    radial-gradient(ellipse 800px 400px at 90% 10%, rgba(15,133,119,0.06), transparent),
+    var(--bg);
+  color:var(--ink);
+  font-family:'Georgia','Noto Serif',serif;
+  line-height:1.65;
+  padding-bottom:60px;
+}
+#progress-wrap{position:fixed; top:0; left:0; width:100%; height:4px; background:rgba(0,0,0,0.08); z-index:999;}
+#progress-bar{height:100%; width:0%; background:linear-gradient(90deg,var(--saffron),var(--gold),var(--green)); transition:width 0.1s;}
+
+header{
+  text-align:center; padding:48px 20px 32px; position:relative;
+  border-bottom:1px solid var(--border);
+  background:linear-gradient(180deg, rgba(20,83,45,0.06), transparent);
+}
+.chakra-badge{width:56px; height:56px; margin:0 auto 14px; border-radius:50%; border:2px solid var(--gold); display:flex; align-items:center; justify-content:center;}
+.chakra-badge svg{width:36px; height:36px;}
+.eyebrow{font-family:'Courier New',monospace; letter-spacing:3px; font-size:11px; color:var(--saffron); text-transform:uppercase; margin-bottom:10px;}
+h1{font-size:clamp(26px,5vw,42px); font-weight:700; color:var(--ink); margin-bottom:8px;}
+.subtitle{color:var(--sub); font-size:15px; font-family:'Courier New',monospace;}
+.tricolor-line{height:3px; width:120px; margin:18px auto 0; background:linear-gradient(90deg,var(--saffron),#fff,var(--green)); border-radius:2px;}
+
+nav.toc{max-width:720px; margin:28px auto; padding:20px 22px; background:var(--card); border:1px solid var(--border); border-radius:12px;}
+nav.toc h2{font-size:13px; letter-spacing:2px; color:var(--gold); text-transform:uppercase; margin-bottom:12px; font-family:'Courier New',monospace;}
+nav.toc a{display:flex; align-items:center; gap:8px; color:var(--ink); text-decoration:none; padding:7px 10px; border-radius:6px; font-size:14px; border-left:2px solid transparent; transition:0.2s;}
+nav.toc a:hover{background:rgba(46,139,87,0.08); border-left-color:var(--saffron);}
+nav.toc a svg{flex-shrink:0; width:15px; height:15px; stroke:var(--gold);}
+
+main{max-width:760px; margin:0 auto; padding:0 20px;}
+
+.chapter-head{margin-top:40px; padding-bottom:16px; border-bottom:2px solid var(--border); display:flex; align-items:baseline; gap:14px;}
+.chapter-num{font-family:'Courier New',monospace; font-size:14px; color:var(--saffron); border:1px solid var(--saffron); padding:3px 9px; border-radius:20px;}
+.chapter-head h2{font-size:26px; color:var(--ink); font-weight:700;}
+.chapter-pages{margin-left:auto; font-size:12px; color:var(--sub); font-family:'Courier New',monospace;}
+
+.sec{margin-top:34px;}
+.sec-head{
+  background:linear-gradient(90deg, rgba(20,83,45,0.10), rgba(20,83,45,0.02));
+  padding:10px 16px; border-radius:8px; margin-bottom:14px;
+  border-left:4px solid var(--gold);
+  display:flex; align-items:center; gap:10px;
+}
+.sec-head .icon{width:22px; height:22px; flex-shrink:0; stroke:var(--gold); fill:none; stroke-width:1.6;}
+.sec-head h3{color:#14532D; font-size:17px; letter-spacing:0.4px; font-weight:700;}
+.sec p{color:#3a3a3a; font-size:15.5px; margin-bottom:12px;}
+.sec ul{margin:10px 0 14px 22px;}
+.sec li{color:#3a3a3a; font-size:15px; margin-bottom:7px;}
+.sec b, .sec strong{color:var(--gold); font-weight:700;}
+
+.fact-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; margin:14px 0;}
+.fact{background:var(--card); border:1px solid var(--border); border-radius:10px; padding:12px 14px; display:flex; gap:10px; align-items:flex-start; box-shadow:0 1px 3px rgba(0,0,0,0.04);}
+.fact svg{width:20px; height:20px; stroke:var(--saffron); fill:none; stroke-width:1.7; flex-shrink:0; margin-top:2px;}
+.fact .num{font-size:19px; font-weight:700; color:var(--saffron); font-family:'Courier New',monospace;}
+.fact .lbl{font-size:11.5px; color:var(--sub); margin-top:3px;}
+
+table{width:100%; border-collapse:collapse; margin:14px 0; font-size:14px;}
+th{background:rgba(20,83,45,0.08); color:#14532D; text-align:left; padding:9px 10px; font-size:12.5px; text-transform:uppercase; letter-spacing:0.5px;}
+td{padding:9px 10px; border-bottom:1px solid var(--border); color:#3a3a3a;}
+tr:hover td{background:rgba(20,83,45,0.03);}
+
+.exam-tip{background:rgba(46,139,87,0.08); border:1px solid rgba(46,139,87,0.3); border-radius:10px; padding:12px 16px; margin:16px 0; font-size:14px; color:#6b4e00; display:flex; gap:10px;}
+.exam-tip svg{width:20px; height:20px; stroke:var(--saffron); fill:none; flex-shrink:0; margin-top:1px;}
+.exam-tip b{color:var(--saffron);}
+
+.glossary-box{background:rgba(20,83,45,0.05); border:1px solid rgba(20,83,45,0.18); border-radius:10px; padding:14px 18px; margin:14px 0;}
+.glossary-box .g-head{display:flex; align-items:center; gap:8px; margin-bottom:10px;}
+.glossary-box .g-head svg{width:18px; height:18px; stroke:#14532D; fill:none; stroke-width:1.6;}
+.glossary-box .g-head span{font-size:11.5px; letter-spacing:1.5px; text-transform:uppercase; color:#14532D; font-family:'Courier New',monospace; font-weight:700;}
+.glossary-box dl{margin:0;}
+.glossary-box dt{font-weight:700; color:var(--saffron); font-size:14px; display:inline; font-family:Georgia,serif;}
+.glossary-box dd{display:inline; margin:0; color:#3a3a3a; font-size:13.5px;}
+.glossary-box .g-item{margin-bottom:7px; line-height:1.55;}
+.glossary-box .g-item:last-child{margin-bottom:0;}
+
+footer{max-width:760px; margin:60px auto 0; padding:24px 20px; text-align:center; border-top:1px solid var(--border); color:var(--sub); font-size:12.5px;}
+footer .pill{display:inline-block; margin-top:10px; padding:5px 14px; border-radius:20px; background:rgba(94,234,212,0.16); border:1px solid rgba(15,133,119,0.4); color:#0F8577; font-family:'Courier New',monospace; font-size:11px;}
+
+.corner-badge{position:fixed; top:12px; right:14px; background:rgba(255,255,255,0.92); border:1px solid var(--border); padding:4px 10px; border-radius:20px; font-size:10.5px; color:var(--sub); font-family:'Courier New',monospace; z-index:998; box-shadow:0 1px 4px rgba(0,0,0,0.06);}
+
+.next-nav{max-width:760px; margin:40px auto 0; padding:0 20px; text-align:center;}
+.next-nav .btn{display:inline-block; padding:10px 22px; border:1px solid var(--gold); border-radius:24px; color:var(--gold); font-family:'Courier New',monospace; font-size:13px; letter-spacing:0.5px;}
+
+/* MCQ / PYQ QUIZ */
+.quiz-head{display:flex; align-items:center; gap:10px; margin-top:56px; padding-bottom:14px; border-bottom:2px solid var(--border);}
+.quiz-head svg{width:26px; height:26px; stroke:var(--gold); fill:none; stroke-width:1.6;}
+.quiz-head h2{font-size:24px; color:var(--ink); font-weight:700;}
+.quiz-controls{display:flex; flex-wrap:wrap; gap:10px; margin:16px 0 20px; align-items:center;}
+.quiz-toggle{padding:7px 14px; border-radius:20px; border:1px solid var(--border); background:var(--card); color:var(--sub); font-size:12.5px; font-family:'Courier New',monospace; cursor:pointer; box-shadow:0 1px 3px rgba(0,0,0,0.04);}
+.quiz-toggle.active{border-color:var(--saffron); color:var(--saffron); background:rgba(46,139,87,0.1);}
+.score-panel{margin-left:auto; display:flex; gap:14px; align-items:center; font-family:'Courier New',monospace; font-size:13px; color:var(--sub);}
+.score-panel b{color:var(--gold); font-size:16px;}
+.q-progress-wrap{height:6px; background:rgba(0,0,0,0.08); border-radius:4px; overflow:hidden; margin-bottom:22px;}
+.q-progress-bar{height:100%; width:0%; background:linear-gradient(90deg,var(--saffron),var(--gold),var(--green)); transition:width 0.3s;}
+
+.q-card{background:var(--card); border:1px solid var(--border); border-radius:12px; padding:18px 20px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,0.05);}
+.q-card.hidden-filter{display:none;}
+.q-meta{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:10px;}
+.badge{font-size:10.5px; font-family:'Courier New',monospace; padding:3px 9px; border-radius:12px; letter-spacing:0.4px;}
+.badge.pyq{background:rgba(20,83,45,0.10); color:#14532D; border:1px solid rgba(20,83,45,0.35);}
+.badge.medium{background:rgba(107,142,35,0.10); color:var(--gold); border:1px solid rgba(107,142,35,0.35);}
+.badge.hard{background:rgba(193,39,45,0.08); color:#C1272D; border:1px solid rgba(193,39,45,0.35);}
+.badge.easy{background:rgba(46,139,87,0.10); color:#1F7A4D; border:1px solid rgba(46,139,87,0.35);}
+.q-text{font-size:15.5px; color:var(--ink); margin-bottom:12px; font-family:Georgia,serif;}
+.q-opts{display:flex; flex-direction:column; gap:8px;}
+.q-opt{
+  text-align:left; padding:10px 14px; border-radius:8px; border:1px solid var(--border);
+  background:#FBF9F3; color:#3a3a3a; font-size:14.5px; cursor:pointer; font-family:Georgia,serif;
+  transition:0.15s;
+}
+.q-opt:hover:not(.locked){border-color:var(--saffron); background:rgba(46,139,87,0.06);}
+.q-opt.correct{background:rgba(46,139,87,0.14); border-color:#2E8B57; color:#1F7A4D;}
+.q-opt.incorrect{background:rgba(193,39,45,0.10); border-color:#C1272D; color:#C1272D;}
+.q-opt.locked{cursor:default;}
+.q-explain{margin-top:10px; font-size:13px; color:var(--sub); padding-top:10px; border-top:1px dashed var(--border); display:none;}
+.q-explain.show{display:block;}
+
+.quiz-footer-bar{display:flex; gap:10px; margin-top:16px; flex-wrap:wrap;}
+.quiz-btn{padding:9px 18px; border-radius:20px; border:1px solid var(--gold); background:transparent; color:var(--gold); font-family:'Courier New',monospace; font-size:12.5px; cursor:pointer;}
+.quiz-btn:hover{background:rgba(107,142,35,0.08);}
+.result-panel{display:none; text-align:center; background:var(--card); border:1px solid var(--gold); border-radius:14px; padding:26px 20px; margin-top:18px;}
+.result-panel.show{display:block;}
+.result-panel .big-score{font-size:38px; color:var(--gold); font-family:'Courier New',monospace; font-weight:700;}
+.result-panel .acc{color:var(--sub); font-size:13.5px; margin-top:6px;}
+
+@media(max-width:600px){.chapter-head{flex-wrap:wrap;} .chapter-pages{margin-left:0;} .score-panel{margin-left:0; width:100%; justify-content:space-between;}}
+/* ===== IYB-THEME: dark / light ===== */
+#iybThemeBtn{position:fixed;right:14px;bottom:16px;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--saffron);background:var(--card);color:var(--saffron);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:1000;box-shadow:0 2px 10px rgba(0,0,0,.25);padding:0;}
+#iybThemeBtn svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;}
+:root{color-scheme:light;}
+:root[data-theme="dark"]{--bg:#14120E;--card:#1F1C16;--ink:#F1ECE0;--sub:#B8B0A0;--saffron:#4FBF86;--green:#3CC3AE;--chakra:#8FE0B4;--gold:#B7D07A;--border:rgba(240,225,190,0.22);color-scheme:dark;}
+:root[data-theme="dark"] body{background:radial-gradient(ellipse 800px 400px at 10% -5%,rgba(255,235,200,0.10),transparent),radial-gradient(ellipse 800px 400px at 90% 10%,rgba(242,118,46,0.06),transparent),var(--bg);}
+:root[data-theme="dark"] #progress-wrap,:root[data-theme="dark"] .q-progress-wrap{background:rgba(255,255,255,0.12);}
+:root[data-theme="dark"] header{background:linear-gradient(180deg,rgba(255,235,200,0.10),transparent);}
+:root[data-theme="dark"] .sec p,:root[data-theme="dark"] td,:root[data-theme="dark"] .glossary-box dd,:root[data-theme="dark"] .q-opt{color:#E4DECF;}
+:root[data-theme="dark"] .sec b,:root[data-theme="dark"] .sec strong{color:#B7D07A;}
+:root[data-theme="dark"] .sec-head{background:linear-gradient(90deg,rgba(255,235,200,0.16),rgba(255,235,200,0.03));}
+:root[data-theme="dark"] .sec-head h3,:root[data-theme="dark"] .glossary-box .g-head span,:root[data-theme="dark"] .iyb-title{color:#8FE0B4;}
+:root[data-theme="dark"] .glossary-box .g-head svg{stroke:#8FE0B4;}
+:root[data-theme="dark"] .glossary-box{background:rgba(255,235,200,0.07);border-color:rgba(240,225,190,0.22);}
+:root[data-theme="dark"] .exam-tip{background:rgba(242,118,46,0.10);border-color:rgba(242,118,46,0.40);color:#FFD9B8;}
+:root[data-theme="dark"] .exam-tip b,:root[data-theme="dark"] .exam-tip svg{color:#FFA566;stroke:#FFA566;}
+:root[data-theme="dark"] th{background:rgba(255,235,200,0.14);color:#8FE0B4;}
+:root[data-theme="dark"] tr:hover td{background:rgba(255,255,255,0.04);}
+:root[data-theme="dark"] .fact,:root[data-theme="dark"] .diagram-card,:root[data-theme="dark"] nav.toc,:root[data-theme="dark"] .q-card,:root[data-theme="dark"] .result-panel{box-shadow:none;}
+:root[data-theme="dark"] .q-opt{background:#27231B;}
+:root[data-theme="dark"] .q-opt:hover:not(.locked){background:rgba(255,235,200,0.14);}
+:root[data-theme="dark"] .q-opt.correct{background:rgba(255,235,200,0.20);color:#8FF0B8;border-color:#4FBF86;}
+:root[data-theme="dark"] .q-opt.incorrect{background:rgba(255,100,110,0.16);color:#FF9AA0;border-color:#FF6470;}
+:root[data-theme="dark"] .badge.pyq{background:rgba(240,225,190,0.14);color:#8FE0B4;border-color:rgba(240,225,190,0.4);}
+:root[data-theme="dark"] .badge.hard{color:#FF9AA0;border-color:rgba(255,100,110,0.45);background:rgba(255,100,110,0.12);}
+:root[data-theme="dark"] .badge.easy{color:#8FF0B8;}
+:root[data-theme="dark"] .quiz-toggle.active{background:rgba(255,235,200,0.18);}
+:root[data-theme="dark"] .corner-badge{background:rgba(31,28,22,0.92);}
+:root[data-theme="dark"] footer .pill{color:#8FE0B4;}
+:root[data-theme="dark"] .anim-box,:root[data-theme="dark"] .rm-wrap,:root[data-theme="dark"] .iyb-fig{background:#1F1C16;}
+:root[data-theme="dark"] .rm-chip,:root[data-theme="dark"] .iyb-btn{background:#1F1C16;color:#8FE0B4;}
+:root[data-theme="dark"] .rm-chip.on,:root[data-theme="dark"] .iyb-btn.on{background:#2E8B57;color:#fff;}
+:root[data-theme="dark"] .rm-info,:root[data-theme="dark"] .iyb-note,:root[data-theme="dark"] .iyb-card{background:#1F1C16;}
+:root[data-theme="dark"] .iyb-card p{color:#F1ECE0;}
+:root[data-theme="dark"] .iyb-track i{background:#38332A;}
+:root[data-theme="dark"] .ds-head{color:#8FE0B4;}
+:root[data-theme="dark"] .ds-track i{background:#38332A;}
+:root[data-theme="dark"] .iyb-svg,:root[data-theme="dark"] #demoSvg{background:#17140F !important;}
+:root[data-theme="dark"] .iyb-svg text[fill="#1F2E2B"],:root[data-theme="dark"] #demoSvg text[fill="#1F2E2B"]{fill:#F1ECE0;}
+:root[data-theme="dark"] .iyb-svg text[fill="#5B6F6A"]{fill:#B8B0A0;}
+:root[data-theme="dark"] .iyb-svg text[fill="#1F6B45"],:root[data-theme="dark"] #demoSvg text[fill="#1F6B45"]{fill:#8FE0B4;}
+:root[data-theme="dark"] .iyb-svg text[fill="#C9490F"],:root[data-theme="dark"] #demoSvg text[fill="#C9490F"]{fill:#FFA566;}
+:root[data-theme="dark"] .iyb-svg text[fill="#000080"]{fill:#9FA8FF;}
+:root[data-theme="dark"] .iyb-svg rect[fill="#fff"],:root[data-theme="dark"] .iyb-svg circle[fill="#fff"]{fill:#1F1C16;}
+:root[data-theme="dark"] .iyb-svg [fill="#F3ECDB"],:root[data-theme="dark"] #demoSvg [fill="#F3ECDB"]{fill:#2A261D;}
+:root[data-theme="dark"] .iyb-svg [fill="#EFE7D4"]{fill:#2D2920;}
+:root[data-theme="dark"] .iyb-svg [stroke="#EFE7D4"]{stroke:#38332A;}
+:root[data-theme="dark"] .iyb-svg [stroke="#BFE0CC"]{stroke:#3F392E;}
+:root[data-theme="dark"] .iyb-svg [fill="#FFF6EC"],:root[data-theme="dark"] .iyb-svg [fill="#FFF1E0"],:root[data-theme="dark"] .iyb-svg [fill="#EEF8F2"]{fill:#2B2218;}
+:root[data-theme="dark"] .iyb-svg [fill="#FFE3CC"]{fill:#3A2A1A;}
+:root[data-theme="dark"] .iyb-svg [stroke="#000080"]{stroke:#9FA8FF;}
+:root[data-theme="dark"] .iyb-svg [fill="#000080"]{fill:#9FA8FF;}
+:root[data-theme="dark"] .iyb-svg .iyb-wave [stroke="#000080"]{stroke:#000080;}
+:root[data-theme="dark"] .iyb-svg .iyb-wave [fill="#000080"]{fill:#000080;}
+:root[data-theme="dark"] .iyb-svg .iyb-wave text{fill:inherit;}
+:root[data-theme="dark"] .rmsvg .rm-lbl{stroke:#17140F;}
+:root[data-theme="dark"] .rmsvg text[fill="#1F6B45"]{fill:#8FE0B4;}
+:root[data-theme="dark"] .rmsvg text[fill="#C9490F"]{fill:#FFA566;}
+:root[data-theme="dark"] .rmsvg .rm-sea,:root[data-theme="dark"] .rmsvg text[fill="#2c6e95"]{fill:#7FC2E8;}
+:root[data-theme="dark"] .rmsvg stop[stop-color="#E3F3FA"]{stop-color:#133548;}
+:root[data-theme="dark"] .rmsvg stop[stop-color="#C3E3F1"]{stop-color:#0E2A3A;}
+:root[data-theme="dark"] .rmsvg path[fill="#EFEDE6"]{fill:#2E2A22;stroke:#4A4438;}
+:root[data-theme="dark"] .rmsvg path[fill="#E3F4EA"],:root[data-theme="dark"] .rmsvg path[fill="#EEF5E3"]{fill:#2A261D;}
+:root[data-theme="dark"] .rmsvg path[stroke="#8FCBAA"],:root[data-theme="dark"] .rmsvg path[stroke="#A9C297"]{stroke:#5A5342;}
+:root[data-theme="dark"] .rmsvg #relOutline{stroke:#6FCF9A;}
+:root[data-theme="dark"] .rmsvg path[fill="#9cc0aa"]{fill:#4A4438;}
+:root[data-theme="dark"] #geoSecSvg stop[stop-color="#E6F4FA"]{stop-color:#10283A;}
+:root[data-theme="dark"] #geoSecSvg stop[stop-color="#F7FBF2"]{stop-color:#1F1C16;}
+:root[data-theme="dark"] #geoSecSvg text[fill="#5B6F6A"]{fill:#B8B0A0;}
+:root[data-theme="dark"] #geoSecSvg text[fill="#0B5A86"]{fill:#7FC2E8;}
+:root[data-theme="dark"] #geoSecSvg text[fill="#8C3A0E"]{fill:#FFA566;}
+:root[data-theme="dark"] #geoSecSvg text[fill="#7a5524"]{fill:#F0C98A;}
+:root[data-theme="dark"] .rm-legend,:root[data-theme="dark"] .anim-cap{color:#B8B0A0;}
+:root[data-theme="dark"] .anim-box rect[fill="#fff"],:root[data-theme="dark"] .anim-box ellipse[fill="#fff"]{fill:#1F1C16;}
+:root[data-theme="dark"] .anim-box text[fill="#1F2E2B"]{fill:#F1ECE0;}
+:root[data-theme="dark"] .toc-group{color:#8FE0B4;}
+:root[data-theme="dark"] .iyb-badge,:root[data-theme="dark"] .ds-badge{background:#D9581A;}
+:root[data-theme="dark"] .iyb-card:nth-child(even) h5{background:#D9581A;}
+
+/* ===== IYB-KIT: animated figures (sea green + sunset orange) ===== */
+.iyb-fig{background:#F6F0E2;border:1px solid var(--border);border-radius:14px;padding:12px;margin:12px 0 16px;}
+.iyb-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px;color:#1F6B45;}
+.iyb-badge{font-family:'Courier New',monospace;font-size:12px;font-weight:700;background:#D9581A;color:#fff;padding:4px 10px;border-radius:999px;}
+.iyb-track{display:flex;gap:6px;margin-bottom:6px;}
+.iyb-track i{flex:1;height:6px;border-radius:3px;background:#E6DCC4;cursor:pointer;transition:background .3s;}
+.iyb-track i.done{background:#2E8B57;}.iyb-track i.cur{background:#F2762E;}
+.iyb-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.iyb-svg{display:block;width:100%;max-width:700px;height:auto;margin:6px auto 0;background:#fff;border-radius:12px;border:1px solid var(--border);}
+.iyb-svg text{font-family:'Courier New',monospace;}
+.iyb-note{margin-top:10px;padding:9px 12px;background:#fff;border-left:4px solid #F2762E;border-radius:8px;font-size:13.5px;color:var(--ink);min-height:20px;}
+.iyb-bar{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:10px;}
+.iyb-btn{font-family:'Courier New',monospace;font-size:12px;font-weight:700;padding:6px 12px;border-radius:999px;border:1.5px solid #2E8B57;background:#fff;color:#1F6B45;cursor:pointer;}
+.iyb-btn.on{background:#2E8B57;color:#fff;}
+.iyb-btn.alt{border-style:dashed;}
+.iyb-btn[disabled]{opacity:.4;cursor:default;}
+.iyb-svg .iyb-bar-r{transition:width 1.1s cubic-bezier(.2,.8,.2,1);}
+@keyframes iyb-pop{0%{transform:scale(0);opacity:0}70%{transform:scale(1.15)}100%{transform:scale(1);opacity:1}}
+@keyframes iyb-fade{from{opacity:0}to{opacity:1}}
+@keyframes iyb-rise{from{transform:translateY(14px);opacity:0}to{transform:translateY(0);opacity:1}}
+@keyframes iyb-spin{to{transform:rotate(360deg)}}
+@keyframes iyb-wave{0%,100%{transform:skewY(0)}50%{transform:skewY(2.5deg)}}
+@keyframes iyb-pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.25);opacity:.55}}
+@keyframes iyb-dash{to{stroke-dashoffset:0}}
+.iyb-pop{transform-box:fill-box;transform-origin:center;animation:iyb-pop .6s ease-out both;}
+.iyb-fade{animation:iyb-fade .8s ease-out both;}
+.iyb-rise{animation:iyb-rise .7s ease-out both;}
+.iyb-spin{transform-box:fill-box;transform-origin:center;animation:iyb-spin 20s linear infinite;}
+.iyb-wave{transform-box:fill-box;transform-origin:left center;animation:iyb-wave 3s ease-in-out infinite;}
+.iyb-pulse{transform-box:fill-box;transform-origin:center;animation:iyb-pulse 2s ease-in-out infinite;}
+@media (prefers-reduced-motion: reduce){.iyb-svg *{animation:none !important;transition:none !important;}}
+
+.iyb-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-top:10px;}
+.iyb-card{background:#fff;border:2px solid #2E8B57;border-radius:12px;overflow:hidden;animation:iyb-rise .6s ease-out both;}
+.iyb-card:nth-child(even){border-color:#F2762E;}
+.iyb-card h5{margin:0;padding:6px 10px;font-family:'Courier New',monospace;font-size:13.5px;color:#fff;background:#2E8B57;}
+.iyb-card:nth-child(even) h5{background:#D9581A;}
+.iyb-card p{margin:0;padding:8px 10px;font-size:14.5px;line-height:1.45;color:#1F2E2B;}
+.iyb-card:nth-child(2){animation-delay:.15s}.iyb-card:nth-child(3){animation-delay:.3s}.iyb-card:nth-child(4){animation-delay:.45s}
+
+.iyb-title{color:#14532D;}
+</style>
+</head>
+<body>
+<div id="progress-wrap"><div id="progress-bar"></div></div>
+<div class="corner-badge" id="cornerPct">0%</div>
+
+<header>
+  <div class="chakra-badge"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="none" stroke="#6B8E23" stroke-width="2.5"/><circle cx="50" cy="50" r="4" fill="#6B8E23"/><g id="spokes"></g></svg></div>
+  <div class="eyebrow">Bharat 2026 · A Reference Annual · Publications Division, GoI</div>
+  <h1>India Year Book 2026</h1>
+  <div class="subtitle">PART 4 of 25 &nbsp;·&nbsp; Chapter 4 &nbsp;·&nbsp; Pages 54&ndash;75</div>
+  <div class="tricolor-line"></div>
+</header>
+
+<nav class="toc">
+  <h2>On This Page</h2>
+  <a href="#highlights"><svg viewBox="0 0 24 24"><path d="M3 17l5-5 4 4 8-8"/></svg>Defence Highlights: Production, Exports & Budget</a>
+  <a href="#indig"><svg viewBox="0 0 24 24"><path d="M12 2l2 7h7l-5.5 4 2 7-5.5-4-5.5 4 2-7L3 9h7z"/></svg>Indigenous Development: AMCA & New Tech</a>
+  <a href="#acq"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>Acquisition, Atmanirbharta & Contracts</a>
+  <a href="#events"><svg viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2z"/><path d="M12 9v5M12 17h.01"/></svg>Key Events of 2025</a>
+  <a href="#mod"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 10h16"/></svg>Ministry of Defence & Departments</a>
+  <a href="#unpk"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/></svg>UN Peacekeeping & Women in Forces</a>
+  <a href="#dma"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>Department of Military Affairs & Reforms</a>
+  <a href="#army"><svg viewBox="0 0 24 24"><path d="M4 14c0-4 3-8 8-8s8 4 8 8-3 6-8 6-8-2-8-6z"/></svg>Indian Army</a>
+  <a href="#iaf"><svg viewBox="0 0 24 24"><path d="M2 16l20-7-7 20-3-8-8-3z"/></svg>Indian Air Force</a>
+  <a href="#navy"><svg viewBox="0 0 24 24"><path d="M2 16c3-3 5 3 8 0s5 3 8 0 4-3 4-3"/></svg>Indian Navy</a>
+  <a href="#icg"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>Indian Coast Guard & Ranks</a>
+  <a href="#recruit"><svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path d="M2 21v-2a5 5 0 015-5h4a5 5 0 015 5v2"/><circle cx="18" cy="8" r="2.5"/></svg>Recruitment & Territorial Army</a>
+  <a href="#dprod"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M15 3v18"/></svg>Defence Production, DPSUs & FDI</a>
+  <a href="#drdo"><svg viewBox="0 0 24 24"><path d="M12 2l2 7h7l-5.5 4 2 7-5.5-4-5.5 4 2-7L3 9h7z"/></svg>DRDO</a>
+  <a href="#bro"><svg viewBox="0 0 24 24"><path d="M4 19h16M6 19V9l6-5 6 5v10"/></svg>Border Roads Organisation</a>
+  <a href="#ncc"><svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path d="M2 21v-2a5 5 0 015-5h4a5 5 0 015 5v2"/><circle cx="18" cy="8" r="2.5"/></svg>Sainik Schools, NCC & Resettlement</a>
+  <a href="#abbrev"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>Abbreviations Used</a>
+  <a href="#quizList"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>Practice MCQs</a>
+</nav>
+
+<main>
+
+<div class="chapter-head">
+  <span class="chapter-num">04</span>
+  <h2>Defence</h2>
+  <span class="chapter-pages">pp. 54&ndash;75</span>
+</div>
+
+<div class="fact-grid">
+  <div class="fact"><svg viewBox="0 0 24 24"><path d="M3 17l5-5 4 4 8-8"/></svg><div><div class="num">₹6.81 lakh cr</div><div class="lbl">Defence Budget 2025-26 (13.45% of Union Budget)</div></div></div>
+  <div class="fact"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/></svg><div><div class="num">₹1.51 lakh cr</div><div class="lbl">Record defence production, FY 2024-25</div></div></div>
+  <div class="fact"><svg viewBox="0 0 24 24"><path d="M12 2l2 7h7l-5.5 4 2 7-5.5-4-5.5 4 2-7L3 9h7z"/></svg><div><div class="num">₹23,622 cr</div><div class="lbl">All-time high defence exports, FY 2024-25</div></div></div>
+</div>
+
+<section class="sec" id="highlights">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><path d="M3 17l5-5 4 4 8-8"/></svg><h3>Defence Highlights: Production, Exports & Budget</h3></div>
+  <div id="fig-hl"></div>
+  <p><b>Record Defence Production:</b> Annual defence production reached a record <b>₹1.51 lakh crore</b> in FY 2024-25 — 18% growth over FY 2023-24 (₹1.27 lakh crore), and 90% up from FY 2019-20 (₹79,071 crore). DPSUs/other PSUs contributed ~<b>77%</b>, private sector <b>23%</b> (up from 21% the previous year). Target: <b>₹3 lakh crore by 2029</b>.</p>
+  <p><b>All-Time High Defence Exports:</b> Touched <b>₹23,622 crore</b> in FY 2024-25 — a 12.04% growth (₹2,539 crore) over FY 2023-24. Private sector contributed ₹15,233 crore, DPSUs ₹8,389 crore. Export target for 2029: <b>₹50,000 crore</b>.</p>
+  <p><b>Record Defence Budget:</b> MoD allocated <b>₹6.81 lakh crore</b> in Union Budget 2025-26 — 9.53% more than FY 2024-25 BE, and <b>13.45% of the Union Budget</b> (highest among all Ministries). Capital Outlay: ₹1.80 lakh crore; ~75% of modernisation budget (₹1.12 lakh crore) earmarked for domestic procurement, with 25% of that (~₹28,000 crore) reserved for domestic private industry. Capital contracts worth ₹1.82 lakh crore signed by Dec 2025.</p>
+  <div class="glossary-box">
+    <div class="g-head"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg><span>Word Bank</span></div>
+    <div class="g-item"><dt>Capital Outlay</dt><dd> — government spending on long-term assets (equipment, infrastructure), as opposed to "revenue" spending on day-to-day running costs like salaries.</dd></div>
+    <div class="g-item"><dt>DPSU</dt><dd> — Defence Public Sector Undertaking, a government-owned company producing defence equipment (e.g., HAL, BEL).</dd></div>
+  </div>
+</section>
+
+<section class="sec" id="indig">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2l2 7h7l-5.5 4 2 7-5.5-4-5.5 4 2-7L3 9h7z"/></svg><h3>Indigenous Development: AMCA & New Technologies</h3></div>
+  <p><b>Advanced Medium Combat Aircraft (AMCA):</b> The AMCA Programme Execution Model gives equal opportunity to private and public sectors on a competitive basis; bidders must be Indian companies (independently, JV, or consortia) — a major milestone towards Aatmanirbharta in the aerospace sector.</p>
+  <p><b>3rd LCA Mk1A / 2nd HTT-40 Production Line:</b> Defence Minister inaugurated the 3rd LCA Tejas Mk1A production line and 2nd HTT-40 line at HAL's Nashik facility on <b>17 October 2025</b>. HAL operationalised the 3rd line in a record <b>two years</b>; it can produce <b>8 aircraft/year</b>, taking HAL's total capacity to <b>24 aircraft/year</b>.</p>
+  <p><b>New Technologies:</b></p>
+  <ul>
+    <li><b>Mission SWAYAT:</b> Autonomous Weapon System (AWS) experiment conducted 23–25 Apr 2025 at Babina Field Firing Range to evaluate indigenous AWS capability.</li>
+    <li><b>Drone manufacturing:</b> 819 drones built by EME units to date (193 Surveillance, 337 Kamikaze/Armed, 289 First Person View).</li>
+    <li><b>Mehar Baba Competition (MBC):</b> IAF's UAV/swarm-drone innovation contest; winners of MBC-I got orders worth ₹800 crore from the three Services; 2nd edition concluded 29 July 2024. Aims to make India a <b>Drone Hub by 2030</b>.</li>
+  </ul>
+</section>
+
+<section class="sec" id="acq">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg><h3>Defence Acquisition, Atmanirbharta & Major Contracts</h3></div>
+  <div id="fig-con"></div>
+  <p><b>Defence Acquisition Council (DAC):</b> chaired by the Defence Minister, has approved capital acquisition proposals worth over <b>₹3.84 lakh crore</b> since January 2025 — covering RPAs, Loiter Munitions, Nag Missile System Mk-II, BrahMos launchers, Astra Mk-II, AEW&C systems and more.</p>
+  <p><b>DAP-2020 Review & DPM-2025:</b> 2025 declared the "Year of Reforms" — DAP-2020 under review to promote JVs/ToT for private sector, FDI, and Defence Lines of Credit (Bharat Maitri Shakti). <b>Defence Procurement Manual (DPM) 2025</b> released 23 Oct 2025 (effective 1 Nov 2025), facilitating ~₹1 lakh crore of revenue procurement.</p>
+  <p><b>Major Contracts (2024-25 & 2025):</b></p>
+  <table>
+    <tr><th>Contract</th><th>Key Details</th></tr>
+    <tr><td>LCA Mk1A</td><td>97 aircraft (68 fighters + 29 twin-seaters), <b>₹62,370 crore</b>, signed 25 Sep 2025; delivery 2027-28 onward over 6 years; <b>64%+ indigenous content</b> (UTTAM AESA Radar, Swayam Raksha Kavach)</td></tr>
+    <tr><td>Rafale-M</td><td>26 aircraft (22 single + 4 twin-seater) for Navy, IGA signed Apr 2025 with France; includes ToT & MRO facility setup; delivery by 2030</td></tr>
+    <tr><td>LCH Prachand</td><td>156 helicopters (66 IAF + 90 Army), <b>₹62,700 crore</b>, signed 28 Mar 2025; <b>65%+ indigenous content</b> target</td></tr>
+  </table>
+  <p>Total MoD contracts in 2024-25 reached <b>193</b>, worth over <b>₹2,09,050 crore</b> (highest ever, nearly double previous record) — 177 (92%) to domestic industry worth ₹1,68,922 crore (81%).</p>
+  <p><b>BrahMos Integration & Testing Facility Centre</b>, Lucknow (part of UP Defence Industrial Corridor) inaugurated <b>11 May 2025</b>; first missile batch flagged off within 5 months.</p>
+  <div class="glossary-box">
+    <div class="g-head"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg><span>Word Bank</span></div>
+    <div class="g-item"><dt>ToT (Transfer of Technology)</dt><dd> — when a foreign supplier shares its technical know-how so an Indian company can manufacture the equipment domestically.</dd></div>
+    <div class="g-item"><dt>Indigenous content</dt><dd> — the percentage of a weapon system's parts/technology made within India rather than imported.</dd></div>
+    <div class="g-item"><dt>JV (Joint Venture) / Consortia</dt><dd> — a JV is a company formed by two or more firms sharing ownership; a consortium is a group of companies collaborating on one project without forming a new joint company.</dd></div>
+  </div>
+</section>
+
+<section class="sec" id="events">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2z"/><path d="M12 9v5M12 17h.01"/></svg><h3>Key Events of 2025</h3></div>
+  <p><b>MiG-21 Decommissioning:</b> IAF's legendary fighter, after more than <b>six decades</b> of service, was decommissioned in Chandigarh on <b>26 September 2025</b> — a ceremonial switch-off of six MiG-21 aircraft marked the occasion.</p>
+  <p><b>Operation Sagar Bandhu:</b> Indian Armed Forces provided HADR to Cyclone Ditwah-hit Sri Lanka. INS Vikrant & INS Udaygiri delivered aid at Colombo; by 9 Dec 2025, IAF evacuated <b>424 Indian nationals</b>, delivered <b>335 tons</b> of medicines/relief material, airlifted 57 Sri Lankan Army troops; 10 IAF heavy-lift aircraft deployed a Field Hospital (treated 2,200+ patients) plus an Army Engineer Task Force. 7 Indian Naval ships delivered <b>1,044 tons</b> of relief material in total.</p>
+  <p><b>President's Sorties:</b> On 29 Oct 2025, President Droupadi Murmu flew a Rafale sortie at Ambala — first President to fly two IAF fighter types (having flown a Su-30 MKI in 2023). On 28 Dec 2025, she took a submarine sortie aboard <b>INS Vaghsheer</b> — only the second President to do so after Dr APJ Abdul Kalam.</p>
+</section>
+
+<section class="sec" id="mod">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 10h16"/></svg><h3>Ministry of Defence & its Departments</h3></div>
+  <p>MoD frames defence policy and communicates it to Services HQs, Inter-Service Organisations, Production Establishments and R&D Organisations, through 4 Departments:</p>
+  <table>
+    <tr><th>Department</th><th>Mandate</th></tr>
+    <tr><td>Department of Defence</td><td>Defence Policy & Planning, Defence Cooperation with foreign countries, Defence Budget; also oversees ISOs, Defence Accounts Dept, Canteen Stores Dept (CSD), Indian Coast Guard, NCC, BRO, IDSA, National Defence College</td></tr>
+    <tr><td>Department of Military Affairs (DMA)</td><td>Headed by the <b>Chief of Defence Staff (CDS)</b> as Secretary; promotes jointness in procurement/training/staffing, restructures military commands, promotes indigenous equipment</td></tr>
+    <tr><td>Department of Defence Production</td><td>Defence production, indigenisation of imported stores/spares, oversight of OFB & DPSU production units</td></tr>
+    <tr><td>Department of Defence R&D</td><td>Research, design & development of Services equipment (via DRDO)</td></tr>
+    <tr><td>Department of Ex-Servicemen Welfare</td><td>Resettlement, welfare & pensionary matters of Ex-servicemen</td></tr>
+  </table>
+</section>
+
+<section class="sec" id="unpk">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/></svg><h3>UN Peacekeeping & Women in Armed Forces</h3></div>
+  <p>India, a founding UN member, has participated since <b>1950</b> (UN Multinational Force, Korea) in <b>53 of 72</b> UN peacekeeping missions, contributing over <b>2,97,000 personnel</b> — one of the largest peacekeeping contributors globally. Currently the <b>4th largest</b> troop contributor: 5,200+ troops in 12 missions (DR Congo, South Sudan, Abyei, Lebanon, Golan Heights). Indian Army's <b>Centre for UN Peacekeeping (CUNPK)</b>, New Delhi, trains 10,000+ troops/year including ~2,000 foreign personnel.</p>
+  <p><b>Women in the Forces:</b> India was among the first to deploy an all-female Police Unit to a UN mission (Liberia); 59 women officers currently deployed in UN operations. In the Army: ~8,300 women officers, 507 given Permanent Commission, 124 in command appointments, 10 women combat aviators, women enrolled in Corps of Military Police since 2019. Navy: all branches except submarines open to women, 750+ women officers. IAF: women in all branches/combat roles since 2022 scheme, 19 women fighter pilots by end-2024 — IAF is the only Service offering women equal opportunity in all combat roles. NDA: women's entry since 2022, first batch of 17 passed out May 2025. 10% seats reserved for girls in all 33 Sainik Schools from 2021-22.</p>
+  <div class="glossary-box">
+    <div class="g-head"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg><span>Word Bank</span></div>
+    <div class="g-item"><dt>Permanent Commission</dt><dd> — a career appointment that lasts until retirement, with eligibility for promotion and pension, as opposed to a Short Service Commission with a fixed, shorter tenure.</dd></div>
+  </div>
+</section>
+
+<section class="sec" id="dma">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><h3>Department of Military Affairs & Reforms</h3></div>
+  <p>Creation of <b>DMA</b> and appointment of the <b>Chief of Defence Staff (CDS) in 2019</b> is the most significant recent defence reform — promotes jointness in procurement/training/staffing and restructuring of military commands.</p>
+  <p><b>Key 2025 reforms:</b></p>
+  <ul>
+    <li><b>Defence Space Agency:</b> Space-Based Surveillance (SBS-3) programme — 52 satellites (21 ISRO + 31 private industry), cost <b>₹25,221.75 crore</b>, cost-shared by Army/Navy/AF (20% each), NTRO/ARC (15% each), MHA (10%); approved by CCS Nov 2024. Conducted first tri-services space exercise "Antariksha Abhyas-2024."</li>
+    <li><b>Defence Cyber Agency (DCyA):</b> Established CERT & Cyber Forensics Labs (Meity-accredited); successfully defended Tri-Services networks during Op Sindoor with <b>zero cyber breaches</b>.</li>
+    <li><b>Technology Perspective and Capability Roadmap (TPCR)-2025:</b> MoD's 3rd public capability roadmap (after 2013, 2018), covering 15 years; released at "Ran Samwad" seminar, Mhow, 27 Aug 2025.</li>
+    <li><b>Armed Forces Vision 2047 (Part-1):</b> approved by CDS & Defence Minister, aligned with Vision India 2047.</li>
+    <li><b>Inter-Services Organisation (Command, Control & Discipline) Act, 2023:</b> empowers C-in-C/Officer-in-Command of ISOs with disciplinary/administrative powers (previously governed separately by Army Act 1950, Navy Act 1957, Air Force Act 1950).</li>
+  </ul>
+</section>
+
+<section class="sec" id="army">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><path d="M4 14c0-4 3-8 8-8s8 4 8 8-3 6-8 6-8-2-8-6z"/></svg><h3>Indian Army</h3></div>
+  <p><b>Northern Front:</b> Stable yet sensitive; after Depsang/Demchok disengagement (2024), 2025 saw reduced PLA deployment (10 Combined Arms Brigades opposite Northern borders). New force multipliers deployed: <b>Rudra Brigades, Divyastra Batteries, Bhairav Battalions</b>.</p>
+  <p><b>J&K:</b> Security situation firmly under control ("Whole of Nation Approach") — zero stone-pelting incidents; but <b>791 drone intrusions</b> reported (9 along J&K IB, 782 along Punjab/Rajasthan IB); <b>237 drones</b> brought down by own forces.</p>
+  <p><b>North East:</b> Stable, improving — since Jan 2025, 26 insurgents neutralised, 1,024 apprehended, 111 surrendered, 542 weapons recovered. Manipur: President's Rule from 13 Feb 2025 improved the situation.</p>
+  <p><b>HADR:</b> Assistance provided across 10 states — 8,092 civilians rescued, medical aid to ~7,159, relief material to 2,617+.</p>
+  <p><b>Military Diplomacy:</b> Engaged with <b>118 countries</b>; <b>39 joint exercises</b>.</p>
+</section>
+
+<section class="sec" id="iaf">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><path d="M2 16l20-7-7 20-3-8-8-3z"/></svg><h3>Indian Air Force</h3></div>
+  <p>Demonstrated all-round capability during <b>Op Sindoor</b>. <b>New Platforms:</b> C-295 MW aircraft from Airbus (two squadrons equipped; first domestically-made C-295 due 2026); indigenous Counter-UAV System inducted.</p>
+  <p><b>Air Defence:</b> Integrated Air Command and Control System fused surveillance picture, shared with Army (via <b>Akashteer</b>) and Navy (via <b>IMSAS</b>) — ensured effective air defence across the Western front.</p>
+  <p><b>Anti-Naxal Ops:</b> South Bastar (21 Apr–10 May 2025) — 2,609 troops, 158 tons load, 18 casualties airlifted; supported elimination of 31 Naxals.</p>
+  <p><b>HADR:</b> Dima Hasao mine rescue (Assam, Jan 2025); Mana avalanche relief (Uttarakhand, Feb 2025); evacuation from Maesot Thailand (Mar 2025), Jordan/Egypt (Iran-Israel war, Jun 2025); Myanmar earthquake relief — 177 tons material, 198 personnel.</p>
+  <p><b>Defence Cooperation:</b> Establishing six new defence wings abroad, starting with Spain, Armenia, Ivory Coast.</p>
+</section>
+
+<section class="sec" id="navy">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><path d="M2 16c3-3 5 3 8 0s5 3 8 0 4-3 4-3"/></svg><h3>Indian Navy</h3></div>
+  <p>Commissioned <b>12 ships/submarines</b> in 2025 including <b>INS Surat</b> (4th & last P15B), <b>INS Nilgiri/Udaygiri/Himgiri</b> (P17A stealth frigates), <b>INS Vaghsheer</b> (6th & last P75 submarine), <b>INS Tamal</b> (from Russia), <b>INS Ikshak</b> (Survey Vessel Large). Navy's proactive deployment during <b>Op Sindoor</b> confined the Pakistan Navy fleet close to its shores. <b>Indian Maritime Doctrine</b> revised & publicly released.</p>
+  <p><b>Warship Construction:</b> 177+ ships/submarines built in India to date; all 52 planned warships being built domestically; 75 more ships/submarines in final approval stages.</p>
+  <p><b>Maritime Security:</b> Ensured safe passage of Indian Flag Merchant Vessels through the Strait of Hormuz and Gulf of Aden/Red Sea amid Israel-Hamas conflict & Somalia piracy re-emergence.</p>
+</section>
+
+<section class="sec" id="icg">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg><h3>Indian Coast Guard & Ranks of the Three Services</h3></div>
+  <div id="fig-ranks"></div>
+  <p>Since inception (<b>1977</b>), ICG has grown to <b>152 ships, 78 aircraft, 42 stations, 11 Air stations/enclaves, 84 Radar stations</b> — one of the largest coast guards in the world.</p>
+  <p><b>Coastal Security:</b> anti-poaching ops → 10 foreign boats & 128 poachers arrested; anti-smuggling → 14 boats, 68 smugglers arrested, ₹37,850.03 crore contraband seized; 140 lives saved in SAR missions. Notable ops: <b>MSC Elsa 3</b> sinking off Kochi (24 crew rescued, May 2025) and <b>MV Wan Hai 503</b> fire off Kerala coast (Jun 2025).</p>
+  <table>
+    <tr><th>Army</th><th>Navy</th><th>Air Force</th></tr>
+    <tr><td>General</td><td>Admiral</td><td>Air Chief Marshal</td></tr>
+    <tr><td>Lieutenant General</td><td>Vice Admiral</td><td>Air Marshal</td></tr>
+    <tr><td>Major General</td><td>Rear Admiral</td><td>Air Vice Marshal</td></tr>
+    <tr><td>Brigadier</td><td>Commodore</td><td>Air Commodore</td></tr>
+    <tr><td>Colonel</td><td>Captain</td><td>Group Captain</td></tr>
+    <tr><td>Lieutenant Colonel</td><td>Commander</td><td>Wing Commander</td></tr>
+    <tr><td>Major</td><td>Lieutenant Commander</td><td>Squadron Leader</td></tr>
+    <tr><td>Captain</td><td>Lieutenant</td><td>Flight Lieutenant</td></tr>
+    <tr><td>Lieutenant</td><td>Sub Lieutenant</td><td>Flying Officer</td></tr>
+  </table>
+  <div class="exam-tip"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg><span><b>Exam angle:</b> Rank-matching tables across the three Services (Colonel = Captain(Navy) = Group Captain) are a recurring objective-question format.</span></div>
+</section>
+
+<section class="sec" id="recruit">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path d="M2 21v-2a5 5 0 015-5h4a5 5 0 015 5v2"/><circle cx="18" cy="8" r="2.5"/></svg><h3>Recruitment & Territorial Army</h3></div>
+  <div id="fig-agni"></div>
+  <p><b>Agnipath Scheme:</b> recruits youth as <b>Agniveers for 4 years</b>; up to <b>25%</b> retained in regular cadre after that. First batch's tenure ends Dec 2026. MHA has mandated 10% horizontal reservation in CAPFs; Railways 10% in RPF; MoD 10% across all levels; various loan schemes (Mudra, Stand Up India) support Agniveers post-service. Age relaxation: 5 years for first batch, 3 years for later batches.</p>
+  <p><b>Officer Entry:</b> mainly via <b>UPSC</b> — NDA/Naval Academy exam and Combined Defence Services Examination (CDSE), twice yearly. Non-UPSC entry via Services Selection Boards (SSBs) for Engineering/Technical/Legal streams, Short Service Commission (Women), NCC & University Entry Scheme.</p>
+  <p><b>Territorial Army (TA):</b> raised by <b>C Rajagopalachari in 1949</b> — provides part-time military training to employed citizens (2 months annual training). Includes unique unit types: Infantry, Ecological, Railways, ONGC, IOCL, Engineers. 9 Ecological Task Force units + 1 River rejuvenation unit engaged in eco-restoration and Ganga/Gomti rejuvenation.</p>
+  <div class="glossary-box">
+    <div class="g-head"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg><span>Word Bank</span></div>
+    <div class="g-item"><dt>Agniveer</dt><dd> — a soldier recruited under the Agnipath scheme for a fixed 4-year tenure, with only a portion retained afterward.</dd></div>
+    <div class="g-item"><dt>JCO / OR</dt><dd> — Junior Commissioned Officer and Other Ranks; non-gazetted Army personnel ranks below commissioned officers.</dd></div>
+  </div>
+</section>
+
+<section class="sec" id="dprod">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M15 3v18"/></svg><h3>Defence Production, DPSUs & Private Sector/FDI</h3></div>
+  <div id="fig-dp"></div>
+  <p><b>Department of Defence Production (DDP)</b>, set up in <b>1962</b>, develops the industrial base for defence equipment through erstwhile Ordnance Factories and DPSUs, guided by the Defence Production Policy for self-reliance.</p>
+  <p><b>DPSUs:</b> Ordnance Factory Board (41 production units) converted into <b>7 new DPSUs</b> from 2021 — Munitions India Ltd., Armoured Vehicles Nigam Ltd., Advanced Weapons and Equipment India Ltd., Troops Comforts Ltd., Yantra India Ltd., India Optel Ltd., Gliders India Ltd. Other DPSUs: HAL, Bharat Electronics Ltd., Bharat Dynamics Ltd., Garden Reach Shipbuilders, Goa Shipyard, Hindustan Shipyard, Mazagon Dock Shipbuilders, Mishra Dhatu Nigam.</p>
+  <p><b>Private Sector & FDI:</b> Opened for 100% Indian private participation + 26% FDI in May 2001 (subject to licensing). Pre-2013-14: 195 licenses issued; since 2013-14: <b>576 licenses</b> issued. Cumulative FDI inflow (May 2001–Jun 2025): <b>₹5,730.55 crore</b>; from Apr 2014–Jun 2025: ₹4,342.13 crore. 47 JV FDI proposals approved.</p>
+  <p><b>DPSU Bhawan</b> inaugurated 10 Nov 2025 at World Trade Centre, New Delhi — a common platform for all <b>16 DPSUs</b>.</p>
+</section>
+
+<section class="sec" id="drdo">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2l2 7h7l-5.5 4 2 7-5.5-4-5.5 4 2-7L3 9h7z"/></svg><h3>Defence Research and Development Organisation (DRDO)</h3></div>
+  <p>DRDO is MoD's R&D wing — lead designer of fighter/reconnaissance aircraft, armoured vehicles, missiles, radars, underwater and soldier-support systems. Flagship systems: <b>BrahMos</b>, Akash, VSHORADS, ASAT Missile, Directed Energy Weapon (DEW), LCA Tejas, AEW&C, Arjun MBT, Pinaka, ATAGS, Varunastra Torpedo, and more.</p>
+  <p><b>Support to industry:</b> Technology Development Fund (TDF) grants up to ₹50 crore; 15 DRDO Industry Academia Centres of Excellence (DIA-CoEs) at IITs/IISc; test facilities opened to private industry; free-access Patent Policy — 2,100+ free Transfer of Technologies for 132+ systems.</p>
+  <p><b>2025 Achievements:</b> Pinaka Long Range Guided Rocket (120 km, 29 Dec); salvo launch of 2 Pralay missiles (31 Dec); ASTRA BVRAAM test from LCA (12 Mar); Medium-Range SAM Army-version flight tests (3-4 Apr); LRGB "Gaurav" glide bomb trials (~100 km range, Apr 8-10); India's first long-range hypersonic missile trial (16 Nov 2024); Akash Prime destroyed 2 aerial targets in Ladakh; Agni-Prime rail-mobile-launcher test (24 Sep 2025).</p>
+  <p><b>Foreign collaboration:</b> co-chairs India-USA Joint Technology Group, Indo-Israel Management Council, India-Russia R&D Subgroup, and steering committees with Singapore, UK, Korea.</p>
+</section>
+
+<section class="sec" id="bro">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><path d="M4 19h16M6 19V9l6-5 6 5v10"/></svg><h3>Border Roads Organisation (BRO)</h3></div>
+  <div id="fig-bro"></div>
+  <p>Functions under MoD building infrastructure for MoRTH/MHA/MEA in border states & Bhutan. Expanded from 2 Projects to presence across <b>11 states, 3 UTs and Bhutan</b>, with <b>18 Projects</b> currently. Budget hit a record <b>₹16,690 crore</b> in FY 2024-25; target ₹18,700 crore for FY 2025-26.</p>
+  <p><b>Landmark projects:</b> <b>Sela Tunnel</b> (Arunachal, inaugurated Mar 2024, highest tunnel in India at 13,000 ft); <b>Shinkhun La Tunnel</b> (under construction, will be world's highest at 15,800 ft); <b>Zojila Pass</b> reopened in a record 32 days (Apr 2025); <b>Brangsa Bridge</b> — world's highest multi-span bridge (14,900 ft, built in 174 days, recognised by World Book of Records); <b>Mudh-Nyoma Airfield</b> (13,710 ft, Eastern Ladakh, completing 2026).</p>
+  <p>On 7 Dec 2025, Defence Minister dedicated <b>125 projects</b> simultaneously (28 roads, 93 bridges, 4 misc.) across Ladakh, J&K and 7 states — the highest-value inauguration in BRO's history (~₹5,000 crore). BRO also executes Indo-Myanmar Border Fencing (1,643 km across 4 states) and LWE-affected road projects in Chhattisgarh.</p>
+</section>
+
+<section class="sec" id="ncc">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path d="M2 21v-2a5 5 0 015-5h4a5 5 0 015 5v2"/><circle cx="18" cy="8" r="2.5"/></svg><h3>Sainik Schools, NCC & Resettlement of Ex-Servicemen</h3></div>
+  <p><b>Sainik School Society:</b> <b>33 Sainik Schools</b> currently functioning; 34th (Bhind, MP) and 35th (Langvoku, Assam) approved. 86 Private/NGO/State schools given provisional approval under the "100 new schools" scheme.</p>
+  <p><b>National Cadet Corps (NCC):</b> established under the <b>NCC Act, 1945</b>; strength targeted to reach <b>20 lakh by 2047</b>. Girl cadet enrolment up from 25.4% (2014) to <b>40% (2025)</b>. 10 cadets completed a Mt Everest expedition (May 2025); ~75,000 cadets participated in relief work during <b>Operation Sindoor</b>.</p>
+  <p><b>Resettlement of Ex-Servicemen:</b> Department of Ex-Servicemen Welfare (DESW) operates via 3 offices:</p>
+  <table>
+    <tr><th>Body</th><th>Role</th></tr>
+    <tr><td>Kendriya Sainik Board (KSB)</td><td>Apex welfare body for war widows/disabled soldiers/ESM; 34 Rajya + 414 Zila Sainik Boards; 14 welfare schemes via Armed Forces Flag Day Fund (AFFDF); PM's Scholarship Scheme gives 5,500 scholarships/year</td></tr>
+    <tr><td>Directorate General of Resettlement (DGR)</td><td>Tri-service body facilitating employment/self-employment/training; assists 60,000+ personnel annually</td></tr>
+    <tr><td>CO, ECHS</td><td>Central Organisation, Ex-Servicemen Contributory Health Scheme</td></tr>
+  </table>
+</section>
+
+<section class="sec" id="abbrev">
+  <div class="sec-head"><svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg><h3>Abbreviations Used in This Chapter</h3></div>
+  <table>
+    <tr><th>Abbreviation</th><th>Full Form</th></tr>
+    <tr><td><b>AMCA</b></td><td>Advanced Medium Combat Aircraft</td></tr>
+    <tr><td><b>BRO</b></td><td>Border Roads Organisation</td></tr>
+    <tr><td><b>DMA</b></td><td>Department of Military Affairs</td></tr>
+    <tr><td><b>DPSU</b></td><td>Defence Public Sector Undertaking</td></tr>
+    <tr><td><b>DRDO</b></td><td>Defence Research and Development Organisation</td></tr>
+    <tr><td><b>FDI</b></td><td>Foreign Direct Investment</td></tr>
+    <tr><td><b>ICG</b></td><td>Indian Coast Guard</td></tr>
+    <tr><td><b>LCA</b></td><td>Light Combat Aircraft</td></tr>
+    <tr><td><b>LCH</b></td><td>Light Combat Helicopter</td></tr>
+    <tr><td><b>NCC</b></td><td>National Cadet Corps</td></tr>
+    <tr><td><b>TA</b></td><td>Territorial Army</td></tr>
+    <tr><td><b>UN</b></td><td>United Nations</td></tr>
+  </table>
+</section>
+
+<script>
+/* IYB-KIT */
+(function(){
+  if(window.IYB) return;
+  var NS='http://www.w3.org/2000/svg';
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var C={G:'#2E8B57',GD:'#1F6B45',GL:'#6FCF9A',O:'#F2762E',OD:'#C9490F',OL:'#F9A56A',INK:'#1F2E2B',SUB:'#5B6F6A',BG:'#F3ECDB'};
+  function mk(svg,after){
+    var c={svg:svg,reduce:reduce,C:C};
+    for(var k in C)c[k]=C[k];
+    var dp=svg;c.use=function(g){dp=g||svg;};c.el=function(n,a,txt,parent){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;(parent||dp).appendChild(e);return e;};
+    c.g=function(a,parent){return c.el('g',a||{},null,parent);};
+    c.text=function(x,y,t,o,parent){o=o||{};var a={x:x,y:y,'font-size':Math.max(o.s||12,12.5),fill:o.f||C.INK};if(o.w)a['font-weight']=o.w;if(o.a)a['text-anchor']=o.a;if(o.op!=null)a.opacity=o.op;return c.el('text',a,t,parent);};
+    c.after=function(f,delay){after.push(function(){if(delay&&!reduce)setTimeout(f,delay);else f();});};
+    c.title=function(t,x,y){return c.text(x,y,t,{s:12,w:700,f:C.GD});};
+    c.bars=function(rows,x0,y0,w,rowH,max,fmt,gap){
+      rows.forEach(function(r,i){var y=y0+i*(rowH+(gap==null?8:gap));
+        c.text(x0-8,y+rowH*0.68,r.l,{s:11.5,a:'end'});
+        c.el('rect',{x:x0,y:y,width:w,height:rowH,rx:4,fill:C.BG});
+        var b=c.el('rect',{x:x0,y:y,width:reduce?w*r.v/max:0,height:rowH,rx:4,fill:r.c||C.G,'class':'iyb-bar-r'});
+        var warm=(r.c===C.O||r.c===C.OD||r.c===C.OL);
+        var t=c.text(x0+w*r.v/max+6,y+rowH*0.68,fmt?fmt(r.v):r.v,{s:11.5,w:700,f:warm?C.OD:C.GD,op:reduce?1:0});
+        c.after(function(){b.setAttribute('width',w*r.v/max);t.setAttribute('opacity',1);});
+      });
+    };
+    return c;
+  }
+  window.IYB={C:C,reduce:reduce,
+   mount:function(id,cfg){
+    var root=document.getElementById(id); if(!root) return;
+    var steps=cfg.steps,H=cfg.h||300,W=cfg.w||700,multi=steps.length>1,cur=0,timer=null,after=[];
+    root.className='iyb-fig';
+    root.innerHTML='<div class="iyb-head"><span class="iyb-badge"></span><b class="iyb-title"></b></div>'+(multi?'<div class="iyb-track"></div>':'')+
+      '<div class="iyb-scroll"><svg class="iyb-svg" style="min-width:'+(cfg.minw!=null?cfg.minw:(W>600?620:0))+'px" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+(cfg.label||'Animated diagram')+'"></svg></div><div class="iyb-html"></div><div class="iyb-note"></div>'+
+      '<div class="iyb-bar">'+(multi?'<button class="iyb-btn iyb-prev">← Previous</button><button class="iyb-btn on iyb-next">Next step →</button><button class="iyb-btn alt iyb-play">▶ Auto-play</button>':'<button class="iyb-btn alt iyb-play">↺ Replay</button>')+'</div>';
+    var svg=root.querySelector('svg'),badge=root.querySelector('.iyb-badge'),ttl=root.querySelector('.iyb-title'),note=root.querySelector('.iyb-note'),htm=root.querySelector('.iyb-html'),track=root.querySelector('.iyb-track');
+    var prev=root.querySelector('.iyb-prev'),next=root.querySelector('.iyb-next'),play=root.querySelector('.iyb-play');
+    if(!multi)badge.style.display='none';
+    if(multi)steps.forEach(function(s,i){var d=document.createElement('i');d.title=s.t;d.addEventListener('click',function(){stop();show(i);});track.appendChild(d);});
+    function show(i){
+      cur=i;after=[];svg.innerHTML='';svg.setAttribute('viewBox','0 0 '+W+' '+(steps[i].h||H));var c=mk(svg,after);steps[i].draw(c);htm.innerHTML=steps[i].html?steps[i].html():'';svg.parentNode.style.display=(steps[i].h&&steps[i].h<40)?'none':'';
+      badge.textContent='Step '+(i+1)+' of '+steps.length;ttl.textContent=steps[i].t;note.textContent=steps[i].note||'';note.style.display=steps[i].note?'':'none';
+      if(multi){Array.prototype.forEach.call(track.children,function(d,k){d.className=k<i?'done':(k===i?'cur':'');});prev.style.opacity=i?1:.4;next.textContent=i===steps.length-1?'Restart ↺':'Next step →';}
+      svg.getBoundingClientRect();
+      requestAnimationFrame(function(){requestAnimationFrame(function(){after.forEach(function(f){f();});});});
+    }
+    function stop(){if(timer){clearInterval(timer);timer=null;}if(multi)play.textContent='▶ Auto-play';}
+    if(multi){prev.addEventListener('click',function(){stop();show(Math.max(0,cur-1));});
+      next.addEventListener('click',function(){stop();show((cur+1)%steps.length);});
+      play.addEventListener('click',function(){if(timer){stop();return;}play.textContent='❚❚ Pause';timer=setInterval(function(){show((cur+1)%steps.length);},cfg.every||5000);});}
+    else play.addEventListener('click',function(){show(0);});
+    show(0);
+   }};
+})();
+
+</script>
+<script>
+(function(){
+function cards(a){return function(){return '<div class="iyb-cards">'+a.map(function(x){return '<div class="iyb-card"><h5>'+x[0]+'</h5><p>'+x[1]+'</p></div>';}).join('')+'</div>';};}
+function wrap(c,x,y,t,o,maxc,lh,parent){var words=t.split(' '),ln='',lines=[];words.forEach(function(w){if((ln+' '+w).trim().length>maxc){lines.push(ln.trim());ln=w;}else ln+=' '+w;});lines.push(ln.trim());lines.forEach(function(l,i){c.text(x,y+i*(lh||15),l,o,parent);});return lines.length;}
+function show(c,g,d){c.after(function(){g.setAttribute('opacity',1);g.setAttribute('class','iyb-pop');},d||0);}
+/* ring(c,x,y,R,frac,col,big,small) */
+function ring(c,x,y,R,frac,col,big,small,delay){var L=2*Math.PI*R;c.el('circle',{cx:x,cy:y,r:R,fill:'none',stroke:'#EFE7D4','stroke-width':14});
+  var r=c.el('circle',{cx:x,cy:y,r:R,fill:'none',stroke:col,'stroke-width':14,'stroke-linecap':'round','stroke-dasharray':L,'stroke-dashoffset':IYB.reduce?L*(1-frac):L,transform:'rotate(-90 '+x+' '+y+')'});
+  c.text(x,y+(small?2:8),big,{s:big.length>5?18:26,w:700,a:'middle',f:col===c.O?c.OD:c.GD});if(small)c.text(x,y+22,small,{s:12.5,a:'middle',f:c.SUB});
+  c.after(function(){r.style.transition='stroke-dashoffset 1.4s ease-out';r.setAttribute('stroke-dashoffset',L*(1-frac));},delay||200);}
+/* tl(c,events,x,y0,dy,maxc): vertical timeline, events=[[date,text,hot]] */
+function tl(c,ev,x,y0,dy,maxc){var ln=c.el('line',{x1:x,x2:x,y1:y0,y2:y0+dy*(ev.length-1),stroke:c.G,'stroke-width':4,'stroke-linecap':'round'});
+  var L=dy*(ev.length-1);ln.style.strokeDasharray=L;ln.style.strokeDashoffset=IYB.reduce?0:L;ln.style.transition='stroke-dashoffset '+(ev.length*0.35)+'s ease-out';c.after(function(){ln.style.strokeDashoffset=0;});
+  ev.forEach(function(e,i){var y=y0+i*dy,col=e[2]?c.O:c.G,g=c.g({opacity:0});
+    c.el('circle',{cx:x,cy:y,r:10,fill:col,stroke:'#fff','stroke-width':3},null,g);
+    c.text(x-18,y+5,e[0],{s:14,w:700,a:'end',f:e[2]?c.OD:c.GD},g);
+    var n=wrap(c,x+20,y+5,e[1],{s:13.5},maxc||28,16,g);show(c,g,i*260);});}
+/* flow(c,steps,y0,h,gap): stacked boxes with arrows; steps=[[title,sub]] */
+function flow(c,st,y0,bh,gap,cols){cols=cols||[c.G,c.O,c.GD];st.forEach(function(s,i){var y=y0+i*(bh+gap),g=c.g({opacity:0}),col=cols[i%cols.length];
+  c.el('rect',{x:20,y:y,width:380,height:bh,rx:14,fill:col},null,g);c.el('circle',{cx:56,cy:y+bh/2,r:20,fill:'#fff'},null,g);c.text(56,y+bh/2+7,String(i+1),{s:20,w:700,a:'middle',f:col},g);
+  c.text(90,y+bh/2-(s[1]?6:-5),s[0],{s:16,w:700,f:'#fff'},g);if(s[1])wrap(c,90,y+bh/2+14,s[1],{s:13,f:'#fff'},38,15,g);
+  if(i<st.length-1)c.el('path',{d:'M210 '+(y+bh+2)+' L210 '+(y+bh+gap-2),stroke:c.SUB,'stroke-width':3,'stroke-linecap':'round'},null,g);show(c,g,i*450);});}
+/* hb(c,rows,y0,max,fmt): animated horizontal bars; rows=[[label,val,warm]] */
+function hb(c,rows,y0,max,fmt,rh){rh=rh||26;rows.forEach(function(r,i){var y=y0+i*(rh+34),W=392,w=W*r[1]/max;
+  c.text(14,y+12,r[0],{s:13,w:700,f:c.INK});c.el('rect',{x:14,y:y+18,width:W,height:rh,rx:6,fill:c.BG});
+  var b=c.el('rect',{x:14,y:y+18,width:IYB.reduce?w:0,height:rh,rx:6,fill:r[2]?c.O:c.G,'class':'iyb-bar-r'});
+  var t=c.text(Math.min(14+w-6,400),y+18+rh*0.7,fmt?fmt(r[1]):r[1],{s:13,w:700,a:'end',f:'#fff',op:IYB.reduce?1:0});
+  c.after(function(){b.setAttribute('width',w);t.setAttribute('opacity',1);},150+i*150);});}
+/* tiles(c,items,cols,y0,h): grid of pop tiles; items=[[big,small]] */
+function tiles(c,it,cols,y0,h,gap){gap=gap||10;var w=(392-(cols-1)*gap)/cols;it.forEach(function(t,i){var x=14+(i%cols)*(w+gap),y=y0+Math.floor(i/cols)*(h+gap),warm=i%2===(Math.floor(i/cols)%2?1:0),g=c.g({opacity:0});
+  c.el('rect',{x:x,y:y,width:w,height:h,rx:12,fill:warm?'#FFF1E0':'#FFFDF7',stroke:warm?c.O:c.G,'stroke-width':2},null,g);
+  c.text(x+w/2,y+h/2+(t[1]?-2:6),t[0],{s:t[0].length>9?15:20,w:700,a:'middle',f:warm?c.OD:c.GD},g);if(t[1])wrap(c,x+w/2,y+h/2+16,t[1],{s:12.5,a:'middle',f:c.SUB},Math.floor(w/7.2),14,g);show(c,g,i*160);});}
+
+IYB.mount('fig-hl',{label:'Defence production, exports and budget',w:420,minw:0,h:260,steps:[
+ {t:'Record defence production',h:280,html:cards([['FY 2024-25','₹1.51 lakh crore: 18% growth over ₹1.27 lakh crore in FY 2023-24'],['Since FY 2019-20','90% up from ₹79,071 crore'],['Who produces','DPSUs/other PSUs about 77%, private sector 23% (21% the previous year)'],['Target','₹3 lakh crore by 2029']]),note:'Bars in ₹ lakh crore.',draw:function(c){
+   hb(c,[['FY 2019-20  (₹79,071 cr)',0.79,0],['FY 2023-24',1.27,0],['FY 2024-25',1.51,1],['Target 2029',3.0,0]],6,3.0,function(v){return v.toFixed(2);},30);}},
+ {t:'All-time high exports',h:230,html:cards([['FY 2024-25','₹23,622 crore, up 12.04% (₹2,539 crore) over FY 2023-24'],['Split','Private sector ₹15,233 crore; DPSUs ₹8,389 crore'],['Target','₹50,000 crore by 2029']]),note:'Private sector gave about two-thirds of exports.',draw:function(c){
+   ring(c,110,105,64,15233/23622,c.O,'₹23,622','crore');
+   c.text(260,70,'Private',{s:14,w:700,f:c.OD});c.text(260,92,'₹15,233 cr',{s:18,w:700,f:c.OD});
+   c.text(260,132,'DPSUs',{s:14,w:700,f:c.GD});c.text(260,154,'₹8,389 cr',{s:18,w:700,f:c.GD});
+   c.text(110,205,'Orange arc = private',{s:12.5,a:'middle',f:c.SUB});}},
+ {t:'Record defence budget 2025-26',h:200,html:cards([['Allocation','₹6.81 lakh crore: 9.53% more than FY 2024-25 BE'],['Share','13.45% of the Union Budget, highest among all Ministries'],['Capital outlay','₹1.80 lakh crore'],['Modernisation','About 75% of ₹1.12 lakh crore for domestic procurement; 25% of that (about ₹28,000 crore) for domestic private industry']]),draw:function(c){
+   ring(c,110,100,64,0.1345*3,c.G,'13.45%','of Union Budget');c.text(240,70,'₹6.81 lakh cr',{s:18,w:700,f:c.GD});c.text(240,92,'Budget 2025-26',{s:13,f:c.SUB});c.text(240,132,'₹1.80 lakh cr',{s:18,w:700,f:c.OD});c.text(240,154,'Capital outlay',{s:13,f:c.SUB});}}]});
+IYB.mount('fig-con',{label:'Major defence contracts',w:420,minw:0,h:250,steps:[
+ {t:'Three big contracts',h:170,html:cards([['LCA Mk1A','97 aircraft (68 fighters + 29 twin-seaters), ₹62,370 crore, signed 25 Sep 2025; delivery 2027-28 onward over 6 years; 64%+ indigenous'],['LCH Prachand','156 helicopters (66 IAF + 90 Army), ₹62,700 crore, signed 28 Mar 2025; 65%+ indigenous target'],['Rafale-M','26 aircraft (22 single + 4 twin-seater) for the Navy; IGA with France, Apr 2025; includes ToT and MRO; delivery by 2030']]),note:'Aircraft/helicopter counts per contract.',draw:function(c){
+   tiles(c,[['97','LCA Mk1A ₹62,370 cr'],['156','LCH Prachand ₹62,700 cr'],['26','Rafale-M (Navy)']],3,20,130,10);}},
+ {t:'Contracts in 2024-25',h:230,html:cards([['Total','193 contracts worth over ₹2,09,050 crore: highest ever, nearly double the previous record'],['Domestic','177 contracts (92%) worth ₹1,68,922 crore (81%)']]),draw:function(c){
+   ring(c,110,105,64,0.92,c.G,'92%','by number');ring(c,310,105,64,0.81,c.O,'81%','by value');
+   c.text(110,205,'177 of 193',{s:13.5,w:700,a:'middle',f:c.GD});c.text(310,205,'₹1,68,922 cr',{s:13.5,w:700,a:'middle',f:c.OD});}}]});
+var RK=[['General','Admiral','Air Chief Marshal'],['Lieutenant General','Vice Admiral','Air Marshal'],['Major General','Rear Admiral','Air Vice Marshal'],['Brigadier','Commodore','Air Commodore'],['Colonel','Captain','Group Captain'],['Lieutenant Colonel','Commander','Wing Commander'],['Major','Lieutenant Commander','Squadron Leader'],['Captain','Lieutenant','Flight Lieutenant'],['Lieutenant','Sub Lieutenant','Flying Officer']];
+function rankTable(c,hi){var x0=14;
+  ['Army','Navy','Air Force'].forEach(function(h,j){c.el('rect',{x:x0+j*132,y:4,width:128,height:28,rx:6,fill:[c.GD,c.G,c.O][j]});c.text(x0+j*132+64,23,h,{s:14,w:700,a:'middle',f:'#fff'});});
+  RK.forEach(function(r,i){var g=c.g({opacity:0}),on=(hi===i);
+    r.forEach(function(t,j){c.el('rect',{x:x0+j*132,y:38+i*44,width:128,height:40,rx:6,fill:on?c.O:'#fff',stroke:on?c.OD:'#BFE0CC','stroke-width':on?2.5:1},null,g);
+      var w=t.split(' ');var lines=t.length>12&&w.length>1?[w.slice(0,Math.ceil(w.length/2)).join(' '),w.slice(Math.ceil(w.length/2)).join(' ')]:[t];
+      lines.forEach(function(l,k){c.text(x0+j*132+64,(lines.length>1?55:63)+i*44+k*15,l,{s:12.5,w:on?700:400,a:'middle',f:on?'#fff':c.INK},g);});});
+    show(c,g,i*130);if(on)g.setAttribute('class','iyb-pulse');});}
+IYB.mount('fig-ranks',{label:'Rank equivalence across the three Services',w:420,minw:0,h:440,steps:[
+ {t:'Rank ladder (senior to junior)',h:440,note:'Each row is an equivalent rank. Read across.',draw:function(c){rankTable(c,-1);}},
+ {t:'Exam favourite: Colonel row',h:440,html:cards([['Equivalent','Colonel = Captain (Navy) = Group Captain'],['Exam angle','Rank-matching tables across the three Services are a recurring objective-question format']]),draw:function(c){rankTable(c,4);}}]});
+IYB.mount('fig-agni',{label:'Agnipath scheme',w:420,minw:0,h:230,steps:[
+ {t:'Agnipath: 4-year tenure',h:230,html:cards([['Tenure','Youth recruited as Agniveers for 4 years'],['Retention','Up to 25% retained in the regular cadre after that'],['First batch','Tenure ends Dec 2026'],['Age relaxation','5 years for the first batch, 3 years for later batches'],['Reservations','10% horizontal reservation in CAPFs, RPF and across MoD']]),draw:function(c){
+   for(var i=0;i<4;i++)(function(i){var g=c.g({opacity:0});c.el('rect',{x:14+i*100,y:30,width:94,height:40,rx:8,fill:i===3?c.O:c.G},null,g);c.text(14+i*100+47,56,'Year '+(i+1),{s:14,w:700,a:'middle',f:'#fff'},g);show(c,g,i*350);})(i);
+   ring(c,110,150,46,0.25,c.O,'25%','retained');
+   c.text(260,140,'Up to 25% join',{s:14,w:700,f:c.OD});c.text(260,162,'the regular cadre',{s:14,w:700,f:c.OD});}}]});
+IYB.mount('fig-bro',{label:'Border Roads Organisation records',w:420,minw:0,h:300,steps:[
+ {t:'High-altitude records (feet)',h:270,html:cards([['Sela Tunnel','Arunachal, inaugurated Mar 2024: highest tunnel in India at 13,000 ft'],['Mudh-Nyoma Airfield','13,710 ft, Eastern Ladakh, completing 2026'],['Brangsa Bridge','World’s highest multi-span bridge, 14,900 ft, built in 174 days'],['Shinkhun La Tunnel','Under construction: will be the world’s highest at 15,800 ft']]),note:'Heights in feet.',draw:function(c){
+   hb(c,[['Sela Tunnel',13000,0],['Mudh-Nyoma Airfield',13710,0],['Brangsa Bridge',14900,0],['Shinkhun La Tunnel (under construction)',15800,1]],6,16000,function(v){return v.toLocaleString('en-IN');},26);}},
+ {t:'7 Dec 2025: 125 projects at once',h:150,html:cards([['What','Defence Minister dedicated 125 projects (28 roads, 93 bridges, 4 misc.) across Ladakh, J&K and 7 states'],['Value','About ₹5,000 crore: highest-value inauguration in BRO’s history'],['Budget','Record ₹16,690 crore in FY 2024-25; target ₹18,700 crore for FY 2025-26']]),draw:function(c){
+   tiles(c,[['28','roads'],['93','bridges'],['4','misc.']],3,20,110,10);}}]});
+IYB.mount('fig-dp',{label:'Defence production base',w:420,minw:0,h:230,steps:[
+ {t:'Ordnance Factory Board → 7 DPSUs',h:290,html:cards([['From 2021','OFB’s 41 production units converted into 7 new DPSUs'],['The seven','Munitions India, Armoured Vehicles Nigam, Advanced Weapons and Equipment India, Troops Comforts, Yantra India, India Optel, Gliders India'],['Common platform','DPSU Bhawan (10 Nov 2025, World Trade Centre, New Delhi) for all 16 DPSUs']]),draw:function(c){
+   var g=c.g({opacity:0});c.el('rect',{x:20,y:100,width:100,height:70,rx:12,fill:c.O},null,g);c.text(70,130,'OFB',{s:20,w:700,a:'middle',f:'#fff'},g);c.text(70,155,'41 units',{s:13,a:'middle',f:'#fff'},g);show(c,g,0);
+   for(var i=0;i<7;i++)(function(i){var h=c.g({opacity:0}),y=10+i*34;c.el('path',{d:'M120 135 C 170 135 160 '+(y+14)+' 210 '+(y+14),fill:'none',stroke:c.GL,'stroke-width':2},null,h);c.el('rect',{x:210,y:y,width:190,height:28,rx:8,fill:c.G},null,h);c.text(305,y+19,['Munitions India','Armoured Vehicles Nigam','Adv. Weapons & Equip.','Troops Comforts','Yantra India','India Optel','Gliders India'][i],{s:12.5,w:700,a:'middle',f:'#fff'},h);show(c,h,300+i*200);})(i);}},
+ {t:'Private sector licences',h:220,html:cards([['Opened','May 2001: 100% Indian private participation + 26% FDI (subject to licensing)'],['Licences','195 before 2013-14; 576 since 2013-14'],['FDI','₹5,730.55 crore cumulative (May 2001–Jun 2025); ₹4,342.13 crore from Apr 2014–Jun 2025; 47 JV FDI proposals approved']]),draw:function(c){
+   hb(c,[['Before 2013-14',195,0],['Since 2013-14',576,1]],20,600,null,34);}}]});
+
+})();
+</script>
+<!-- ===================== MCQ / PYQ QUIZ ===================== -->
+<div class="quiz-head"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg><h2>Practice MCQs — Chapter 4</h2></div>
+<div class="quiz-controls">
+  <button class="quiz-toggle active" id="filterAll">All Questions</button>
+  <button class="quiz-toggle" id="filterPyq">PYQ Only</button>
+  <div class="score-panel">Score: <b id="scoreVal">0</b>/<span id="totalVal">12</span></div>
+</div>
+<div class="q-progress-wrap"><div class="q-progress-bar" id="qProgressBar"></div></div>
+
+<div id="quizList">
+
+<div class="q-card" data-pyq="0">
+  <div class="q-meta"><span class="badge medium">Medium</span></div>
+  <div class="q-text">Q1. India's defence production reached a record figure in FY 2024-25 of:</div>
+  <div class="q-opts">
+    <button class="q-opt">₹79,071 crore</button>
+    <button class="q-opt">₹1.27 lakh crore</button>
+    <button class="q-opt" data-correct="true">₹1.51 lakh crore</button>
+    <button class="q-opt">₹3 lakh crore</button>
+  </div>
+  <div class="q-explain">Defence production hit ₹1.51 lakh crore in FY 2024-25 — 18% growth over FY 2023-24's ₹1.27 lakh crore.</div>
+</div>
+
+<div class="q-card" data-pyq="0">
+  <div class="q-meta"><span class="badge medium">Medium</span></div>
+  <div class="q-text">Q2. The Defence Budget 2025-26 constitutes what percentage of the total Union Budget?</div>
+  <div class="q-opts">
+    <button class="q-opt">9.53%</button>
+    <button class="q-opt" data-correct="true">13.45%</button>
+    <button class="q-opt">18%</button>
+    <button class="q-opt">25%</button>
+  </div>
+  <div class="q-explain">₹6.81 lakh crore = 13.45% of the Union Budget 2025-26 — the highest share among all Ministries.</div>
+</div>
+
+<div class="q-card" data-pyq="0">
+  <div class="q-meta"><span class="badge hard">Hard</span></div>
+  <div class="q-text">Q3. HAL's 3rd LCA Mk1A production line at Nashik, inaugurated in Oct 2025, takes HAL's total annual production capacity to:</div>
+  <div class="q-opts">
+    <button class="q-opt">8 aircraft/year</button>
+    <button class="q-opt">16 aircraft/year</button>
+    <button class="q-opt" data-correct="true">24 aircraft/year</button>
+    <button class="q-opt">32 aircraft/year</button>
+  </div>
+  <div class="q-explain">The new line alone can produce 8/year; combined with existing lines, HAL's total capacity reaches 24 aircraft/year.</div>
+</div>
+
+<div class="q-card" data-pyq="0">
+  <div class="q-meta"><span class="badge medium">Medium</span></div>
+  <div class="q-text">Q4. The MiG-21 was decommissioned after service of more than:</div>
+  <div class="q-opts">
+    <button class="q-opt">Four decades</button>
+    <button class="q-opt">Five decades</button>
+    <button class="q-opt" data-correct="true">Six decades</button>
+    <button class="q-opt">Seven decades</button>
+  </div>
+  <div class="q-explain">MiG-21 served for over six decades before decommissioning in Chandigarh on 26 September 2025.</div>
+</div>
+
+<div class="q-card" data-pyq="0">
+  <div class="q-meta"><span class="badge easy">Easy</span></div>
+  <div class="q-text">Q5. The Department of Military Affairs (DMA) is headed by whom, as its Secretary?</div>
+  <div class="q-opts">
+    <button class="q-opt">Defence Minister</button>
+    <button class="q-opt" data-correct="true">Chief of Defence Staff (CDS)</button>
+    <button class="q-opt">Defence Secretary</button>
+    <button class="q-opt">Army Chief</button>
+  </div>
+  <div class="q-explain">DMA, created in 2019, is headed by the CDS as its Secretary — a landmark defence reform.</div>
+</div>
+
+<div class="q-card" data-pyq="0">
+  <div class="q-meta"><span class="badge medium">Medium</span></div>
+  <div class="q-text">Q6. India is currently ranked as which largest troop contributor to UN Peacekeeping missions?</div>
+  <div class="q-opts">
+    <button class="q-opt">1st</button>
+    <button class="q-opt">2nd</button>
+    <button class="q-opt">3rd</button>
+    <button class="q-opt" data-correct="true">4th</button>
+  </div>
+  <div class="q-explain">India is currently the 4th largest troop contributor, with 5,200+ troops in 12 UN missions.</div>
+</div>
+
+<div class="q-card" data-pyq="0">
+  <div class="q-meta"><span class="badge hard">Hard</span></div>
+  <div class="q-text">Q7. The Space-Based Surveillance (SBS-3) programme involves a total of how many satellites?</div>
+  <div class="q-opts">
+    <button class="q-opt">21</button>
+    <button class="q-opt">31</button>
+    <button class="q-opt" data-correct="true">52</button>
+    <button class="q-opt">75</button>
+  </div>
+  <div class="q-explain">SBS-3 = 52 satellites total (21 by ISRO + 31 by private industry), cost ₹25,221.75 crore.</div>
+</div>
+
+<div class="q-card" data-pyq="0">
+  <div class="q-meta"><span class="badge easy">Easy</span></div>
+  <div class="q-text">Q8. The Agnipath Scheme recruits youth as Agniveers for an initial period of:</div>
+  <div class="q-opts">
+    <button class="q-opt">2 years</button>
+    <button class="q-opt">3 years</button>
+    <button class="q-opt" data-correct="true">4 years</button>
+    <button class="q-opt">5 years</button>
+  </div>
+  <div class="q-explain">Agniveers serve an initial 4-year tenure; up to 25% are retained in the regular cadre afterward.</div>
+</div>
+
+<div class="q-card" data-pyq="0">
+  <div class="q-meta"><span class="badge medium">Medium</span></div>
+  <div class="q-text">Q9. The rank of "Colonel" in the Army corresponds to which rank in the Indian Air Force?</div>
+  <div class="q-opts">
+    <button class="q-opt">Wing Commander</button>
+    <button class="q-opt" data-correct="true">Group Captain</button>
+    <button class="q-opt">Air Commodore</button>
+    <button class="q-opt">Squadron Leader</button>
+  </div>
+  <div class="q-explain">Colonel (Army) = Captain (Navy) = Group Captain (Air Force).</div>
+</div>
+
+<div class="q-card" data-pyq="0">
+  <div class="q-meta"><span class="badge medium">Medium</span></div>
+  <div class="q-text">Q10. The Territorial Army was raised in 1949 by:</div>
+  <div class="q-opts">
+    <button class="q-opt">Jawaharlal Nehru</button>
+    <button class="q-opt" data-correct="true">C Rajagopalachari</button>
+    <button class="q-opt">Sardar Vallabhbhai Patel</button>
+    <button class="q-opt">Dr Rajendra Prasad</button>
+  </div>
+  <div class="q-explain">The Territorial Army was raised by C Rajagopalachari, the first Governor-General of free India, in 1949.</div>
+</div>
+
+<div class="q-card" data-pyq="0">
+  <div class="q-meta"><span class="badge hard">Hard</span></div>
+  <div class="q-text">Q11. The erstwhile Ordnance Factory Board was converted into how many new DPSUs from 2021?</div>
+  <div class="q-opts">
+    <button class="q-opt">5</button>
+    <button class="q-opt" data-correct="true">7</button>
+    <button class="q-opt">9</button>
+    <button class="q-opt">16</button>
+  </div>
+  <div class="q-explain">OFB (41 production units) was converted into 7 new DPSUs from 2021, including Munitions India Ltd. and Yantra India Ltd.</div>
+</div>
+
+<div class="q-card" data-pyq="0">
+  <div class="q-meta"><span class="badge medium">Medium</span></div>
+  <div class="q-text">Q12. The Sela Tunnel, recognised as the highest tunnel in India at 13,000 ft, is located in which state, connecting to which sector?</div>
+  <div class="q-opts">
+    <button class="q-opt">Sikkim, connecting to Nathu La</button>
+    <button class="q-opt" data-correct="true">Arunachal Pradesh, connecting to Tawang</button>
+    <button class="q-opt">Ladakh, connecting to Galwan</button>
+    <button class="q-opt">Himachal Pradesh, connecting to Spiti</button>
+  </div>
+  <div class="q-explain">The Sela Tunnel, on the Balipara-Charduar-Tawang road in Arunachal Pradesh, ensures all-weather connectivity to the Tawang sector.</div>
+</div>
+
+</div>
+
+<div class="quiz-footer-bar">
+  <button class="quiz-btn" id="showAllBtn">Show All Answers</button>
+  <button class="quiz-btn" id="resetBtn">Reset Quiz</button>
+</div>
+
+<div class="result-panel" id="resultPanel">
+  <div class="big-score" id="finalScore">0/12</div>
+  <div class="acc" id="finalAcc">0% accuracy</div>
+</div>
+
+</main>
+
+<div class="next-nav"><span class="btn">Next → Part 5: Chapter 5, Law and Justice</span></div>
+
+<footer>
+  Compiled by the <b>VibhillionAI</b> Team from Bharat 2026 (India Year Book), Publications Division, Ministry of Information & Broadcasting, Govt. of India &mdash; for UPSC / APPSC / TGPSC / SSC CGL exam preparation.
+  <br>
+  <svg width="60" height="14" viewBox="0 0 60 14"><rect x="0" y="0" width="20" height="14" fill="#FF9933"/><rect x="20" y="0" width="20" height="14" fill="#ffffff"/><circle cx="30" cy="7" r="3" fill="none" stroke="#0B3D91" stroke-width="0.6"/><rect x="40" y="0" width="20" height="14" fill="#128808"/></svg>
+  <span class="pill">Chapter 4 · Defence</span>
+
+</footer>
+
+<script>
+const bar = document.getElementById('progress-bar');
+const pct = document.getElementById('cornerPct');
+window.addEventListener('scroll', () => {
+  const h = document.documentElement;
+  const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+  bar.style.width = scrolled + '%';
+  pct.textContent = Math.round(scrolled) + '%';
+});
+const spokes = document.getElementById('spokes');
+for (let i = 0; i < 24; i++) {
+  const angle = (i * 15) * Math.PI / 180;
+  const x2 = 50 + 40 * Math.cos(angle);
+  const y2 = 50 + 40 * Math.sin(angle);
+  const line = document.createElementNS('http://www.w3.org/2000/svg','line');
+  line.setAttribute('x1', 50); line.setAttribute('y1', 50);
+  line.setAttribute('x2', x2); line.setAttribute('y2', y2);
+  line.setAttribute('stroke', '#6B8E23'); line.setAttribute('stroke-width', '1');
+  spokes.appendChild(line);
+}
+
+let score = 0;
+let answered = 0;
+const totalQ = document.querySelectorAll('.q-card').length;
+document.getElementById('totalVal').textContent = totalQ;
+
+document.querySelectorAll('.q-card').forEach(card => {
+  const opts = card.querySelectorAll('.q-opt');
+  opts.forEach(opt => {
+    opt.addEventListener('click', () => {
+      if (card.classList.contains('answered')) return;
+      card.classList.add('answered');
+      answered++;
+      const isCorrect = opt.dataset.correct === 'true';
+      if (isCorrect) score++;
+      opts.forEach(o => {
+        o.classList.add('locked');
+        if (o.dataset.correct === 'true') o.classList.add('correct');
+        else if (o === opt) o.classList.add('incorrect');
+      });
+      card.querySelector('.q-explain').classList.add('show');
+      document.getElementById('scoreVal').textContent = score;
+      const p = (answered / totalQ) * 100;
+      document.getElementById('qProgressBar').style.width = p + '%';
+      if (answered === totalQ) showResult();
+    });
+  });
+});
+
+function showResult(){
+  const panel = document.getElementById('resultPanel');
+  panel.classList.add('show');
+  document.getElementById('finalScore').textContent = score + '/' + totalQ;
+  document.getElementById('finalAcc').textContent = Math.round((score/totalQ)*100) + '% accuracy';
+}
+
+document.getElementById('showAllBtn').addEventListener('click', () => {
+  document.querySelectorAll('.q-card').forEach(card => {
+    if (card.classList.contains('answered')) return;
+    card.classList.add('answered');
+    answered++;
+    const opts = card.querySelectorAll('.q-opt');
+    opts.forEach(o => {
+      o.classList.add('locked');
+      if (o.dataset.correct === 'true') o.classList.add('correct');
+    });
+    card.querySelector('.q-explain').classList.add('show');
+  });
+  document.getElementById('qProgressBar').style.width = '100%';
+  showResult();
+});
+
+document.getElementById('resetBtn').addEventListener('click', () => location.reload());
+
+document.getElementById('filterAll').addEventListener('click', () => {
+  document.querySelectorAll('.q-card').forEach(c => c.classList.remove('hidden-filter'));
+  document.getElementById('filterAll').classList.add('active');
+  document.getElementById('filterPyq').classList.remove('active');
+});
+document.getElementById('filterPyq').addEventListener('click', () => {
+  document.querySelectorAll('.q-card').forEach(c => {
+    if (c.dataset.pyq === '1') c.classList.remove('hidden-filter');
+    else c.classList.add('hidden-filter');
+  });
+  document.getElementById('filterPyq').classList.add('active');
+  document.getElementById('filterAll').classList.remove('active');
+});
+</script>
+<script>
+/* IYB-THEME toggle */
+(function(){
+  var root=document.documentElement,KEY='iyb-theme',cur='light';
+  try{var s=localStorage.getItem(KEY);if(s==='light'||s==='dark')cur=s;}catch(e){}
+  function apply(){if(cur==='auto')root.removeAttribute('data-theme');else root.setAttribute('data-theme',cur);
+    var b=document.getElementById('iybThemeBtn');if(b){var lbl=cur==='auto'?'Theme: Auto (follows device)':cur==='dark'?'Theme: Dark':'Theme: Light';b.title=lbl;b.setAttribute('aria-label',lbl);
+      b.innerHTML=cur==='dark'?'<svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>':cur==='light'?'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>':'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 000 18z" fill="currentColor"/></svg>';
+      b.querySelector('span')||0;}}
+  var b=document.createElement('button');b.id='iybThemeBtn';b.type='button';
+  b.addEventListener('click',function(){cur=cur==='light'?'dark':'light';try{if(cur==='auto')localStorage.removeItem(KEY);else localStorage.setItem(KEY,cur);}catch(e){}apply();});
+  function mount(){document.body.appendChild(b);apply();}
+  apply();
+  if(document.body)mount();else document.addEventListener('DOMContentLoaded',mount);
+})();
+
+</script>
+</body>
+</html>
